@@ -4,6 +4,7 @@ R&amp;C website
 Create a new branch for every update of code.
 
 BRANCH NAMEING PROTOCOL 
+
     *short descriptive word or words that describe what the update is. such as "nav_animate"
     
     *seperate words with underscore(_)
