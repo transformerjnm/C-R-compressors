@@ -25,3 +25,7 @@ BRANCH NAMEING PROTOCOL
     *use all lowercase letters to prevent problems when loading onto web server. this includes images and file names.
     
     *seperate words with underscores(_). example nav_anmiation
+ 
+ CODE INDENTION
+ 
+   *Two spaces. You can set you code editer tab to two spaces
