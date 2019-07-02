@@ -1,22 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<!-- set browser color to them color. only supported in sertain mobile devices as of 5/13/19-->
-	<meta name="theme-color" content="color">
-	<link rel="stylesheet preload" type="text/css" href="css/styles.css">
-
-	<!-- ADD DESCRIPTION SEO OPT JASON LD---->
-	<meta name="description" content="" />
-	<link rel="icon" href="link">
-	<title>R&amp;C Compressors</title>
-</head>
-
-<body>
-	<?php include("shared/header.php")?>
+	<?php require("shared/header.php")?>
 	<section class="hero_content">
 		<h1>C&amp;R first time customer free evaluation</h1>
 		<span><a href="contact.php?service=eva">Get Free Evaluation</a></span>
@@ -42,7 +25,7 @@
 		</div>
 	</section>
 	<!-- *****SERVICE AREA***** -->
-	<section class="normal_content">
+	<section class="normal_content area">
 		<div class="grd_col_2">
 			<div class="grd_item_1">
 				<h3>Area</h3>
@@ -55,7 +38,7 @@
 		</div>
 	</section>
 	<!-- ******SERVICE TIME***** -->
-	<section class="normal_content">
+	<section class="normal_content time">
 		<div class="grd_col_2">
 			<div class="grd_item_1">
 				<h3>I need repair</h3>
@@ -67,7 +50,7 @@
 		</div>
 	</section>
 	<!-- ******ABOUT US***** -->
-	<section class="skinny_wide">
+	<section class="skinny_wide about">
 		<div class="grd_col_2">
 			<div class="grd_item_1">
 				<h3>Who We Are</h3>

@@ -1,6 +1,71 @@
-.flexbox{
+/*-------Global Styles--------*/
+/*Color Pallet and varibles*/
+/*
+red: rgba(359,0,3,1) #b50006
+blue: rgba(0,52,120,1) #003478
+grey-white: rgba(240,240,240,1) #f0f0f0
+black
+*/
+:root {
+	--main_bg: #f0f0f0;
+	--text_color: black;
+	--accent_color: #003478;
+	--alert_color: #b50006;
+}
+
+html {}
+body{
+	margin: 0;
+	background-color: var(--main_bg);
+}
+/*------custom display layout------*/
+/*flexbox*/
+.flexbox {
+	display: flex;
+}
+
+.flex_item {
 	
 }
-.flex_item{
-	
+
+/*grid*/
+.grd_col_2 {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
 }
+
+.grd_item_1 {
+	grid-column-start: 1;
+	grid-column-end: 1;
+}
+
+.grd_item_2 {
+	grid-column-start: 2;
+	grid-column-end: 2;
+}
+
+/*----sections styles---*/
+.hero_content{
+	background-image: url("../images/industrial_mashien.jpg");
+	min-height: 100vh;
+}
+.wide_skinny {
+	background-color: var(--accent_color);
+	color: var(--main_bg);
+}
+
+.skinny_wide {
+	background-color: var(--accent_color);
+	color: var(--main_bg);
+}
+
+.normal_content {}
+
+/*--------page sections specifics-------*/
+.services {}
+
+.about {}
+
+.time {}
+
+.area {}
