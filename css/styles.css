@@ -14,19 +14,19 @@ black
 }
 
 html {}
-body{
+
+body {
 	margin: 0;
 	background-color: var(--main_bg);
 }
+
 /*------custom display layout------*/
 /*flexbox*/
 .flexbox {
 	display: flex;
 }
 
-.flex_item {
-	
-}
+.flex_item {}
 
 /*grid*/
 .grd_col_2 {
@@ -45,27 +45,64 @@ body{
 }
 
 /*----sections styles---*/
-.hero_content{
-	background-image: url("../images/industrial_mashien.jpg");
+.hero_section {
+	background-image: url("../images/factory.jpg");
+	background-size: cover;
+	background-position: center;
+	color: var(--main_bg);
 	min-height: 100vh;
+	margin-bottom: -5vw;
+}
+.hero_content{
+	display: block;
+	margin: auto;
+	width: 100%;
+	text-align: center;
+}
+.hero_content a{
+	color: var(--main_bg);
+	background-color: var(--alert_color);
+	position: relative;
+	top: 60vh;
 }
 .wide_skinny {
 	background-color: var(--accent_color);
 	color: var(--main_bg);
+	clip-path: polygon(0% 0%, 100% 5vw, 100% calc(100% - 5vw), 0% 100%);
+  shape-outside: polygon(0% 0%, 100% 5vw, 100% calc(100% - 5vw), 0% 100%);
+	padding: 5vw 1rem 5vw 1rem;
 }
 
 .skinny_wide {
 	background-color: var(--accent_color);
 	color: var(--main_bg);
+	clip-path: polygon(0 5vw, 100% 0, 100% 100%, 0 calc(100% - 5vw));
+	shape-outside: polygon(0 5vw, 100% 0, 100% 100%, 0 calc(100% - 5vw));
+	padding: 5vw 1rem 5vw 1rem;
+
 }
 
 .normal_content {}
 
 /*--------page sections specifics-------*/
-.services {}
+.services {
+	min-height: 50vh;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
 
-.about {}
+.about {
+	min-height: 50vh;
+}
 
-.time {}
+.time {
+	min-height: 50vh;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
 
-.area {}
+.area {
+	min-height: 50vh;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
