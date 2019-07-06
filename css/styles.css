@@ -10,16 +10,53 @@ black
 	--main_bg: #f0f0f0;
 	--text_color: black;
 	--accent_color: #003478;
+	--accent_color_rgba: rgba(0,52,120,.75);
 	--alert_color: #b50006;
 }
 
-html {}
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 
 body {
 	margin: 0;
 	background-color: var(--main_bg);
 }
+a{
+	padding: .5rem;
+	text-decoration: none;
+}
+nav{
+	height: 5rem;
+	position: fixed;
+	color: var(--main_bg);
+	background-color: var(--accent_color_rgba);
+	width: 100vw;
+	z-index: 2;
+	clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 5vw), 0% 100%);
+}
+nav ul {
+	margin: 0;
+	width: 80vw;
+	display: inline;
+}
+nav li{
+	display: inline;
+	height: 3rem;
+}
+nav a {
+	color: var(--main_bg);
 
+}
+nav .logo{
+	width: 3rem;
+	position: relative;
+	top: 20%;
+}
 /*------custom display layout------*/
 /*flexbox*/
 .flexbox {
@@ -54,15 +91,21 @@ body {
 	margin-bottom: -5vw;
 }
 .hero_content{
-	display: block;
+	text-align: center;
 	margin: auto;
 	width: 100%;
-	text-align: center;
+}
+.hero_content h1 {
+	width: 100%;
+	position: absolute;
+	top: 25vw;
+	
 }
 .hero_content a{
 	color: var(--main_bg);
 	background-color: var(--alert_color);
-	position: relative;
+	width: 25vw;
+	position: relative;;
 	top: 60vh;
 }
 .wide_skinny {

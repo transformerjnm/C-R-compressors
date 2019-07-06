@@ -6,7 +6,7 @@
 	</div>
 </section>
 <!-- *****SERVICES***** -->
-<section class="wide_skinny services">
+<section class="wide_skinny services" id="services_id">
 	<div class="flexbox">
 		<div class="flex_item">
 			<span>evaluation</span>
@@ -26,7 +26,7 @@
 	</div>
 </section>
 <!-- *****SERVICE AREA***** -->
-<section class="normal_content area">
+<section class="normal_content area" id="area_id">
 	<div class="grd_col_2">
 		<div class="grd_item_1">
 			<h3>Area</h3>
@@ -39,7 +39,7 @@
 	</div>
 </section>
 <!-- ******SERVICE TIME***** -->
-<section class="normal_content time">
+<section class="normal_content time" id="time_id">
 	<div class="grd_col_2">
 		<div class="grd_item_1">
 			<h3>I need repair</h3>
@@ -51,7 +51,7 @@
 	</div>
 </section>
 <!-- ******ABOUT US***** -->
-<section class="skinny_wide about">
+<section class="skinny_wide about" id="about_id">
 	<div class="grd_col_2">
 		<div class="grd_item_1">
 			<h3>Who We Are</h3>
