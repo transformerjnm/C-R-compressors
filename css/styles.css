@@ -61,10 +61,30 @@ nav .logo{
 /*flexbox*/
 .flexbox {
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
 }
 
-.flex_item {}
-
+.flex_item {
+	overflow: hidden;
+	height: 20vh;
+	width: 15vw;
+	box-shadow: 0 0 10px var(--main_bg);
+	text-align: center;
+	background-color: var(--main_bg);
+	color: var(--text_color);
+}
+.flex_item:hover{
+	animation-name: scale_to_screen;
+	animation-duration: .2s;
+	animation-fill-mode: forwards;
+}
+@keyframes scale_to_screen{
+	from{}
+	to{width: 30vw;
+		height: auto;	
+	}
+}
 /*grid*/
 .grd_col_2 {
 	display: grid;
@@ -98,7 +118,7 @@ nav .logo{
 .hero_content h1 {
 	width: 100%;
 	position: absolute;
-	top: 25vw;
+	top: 25vh;
 	
 }
 .hero_content a{
@@ -142,10 +162,16 @@ nav .logo{
 	min-height: 50vh;
 	padding-left: 1rem;
 	padding-right: 1rem;
+	background-image: url(../images/welding_repair.jpg);
+	background-size: cover;
+	background-position: center;
 }
 
 .area {
 	min-height: 50vh;
 	padding-left: 1rem;
 	padding-right: 1rem;
+	background-image: url(../images/city.jpg);
+	background-size: cover;
+	background-position: center;
 }
