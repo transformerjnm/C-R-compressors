@@ -19,9 +19,9 @@
 	<header>
 
 		<nav>
-				
+
 			<ul>
-			<li><img src="images/temp_logo.jpg" alt="" class="logo"></li>
+				<li><img src="images/temp_logo.jpg" alt="" class="logo"></li>
 				<li><a href="index.php#services_id">Services</a></li>
 				<li><a href="index.php#area_id">Area</a></li>
 				<li><a href="index.php#time_id">Time</a></li>
