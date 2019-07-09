@@ -1,8 +1,8 @@
 <?php require("shared/header.php")?>
 <section class="hero_section">
 	<div class="hero_content">
-		<h1>C&amp;R first time customer free evaluation</h1>
-		<span><a href="contact.php?service=eva">Get Free Evaluation</a></span>
+		<h1 id="title">C&amp;R first time customer free evaluation</h1>
+		<span><a href="contact.php?service=eva" id="freeEvaluation">Get Free Evaluation</a></span>
 	</div>
 </section>
 <!-- *****SERVICES***** -->
@@ -68,5 +68,8 @@
 		</div>
 	</div>
 </section>
+<script src="js/animate.js">
+    //links to animation javascript file
+</script>
 <?php include("shared/footer.php")?>
 
