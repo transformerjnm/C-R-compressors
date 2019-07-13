@@ -63,6 +63,7 @@ nav .logo{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
+    
 }
 
 .flex_item {
@@ -119,13 +120,14 @@ nav .logo{
 	width: 100%;
 	position: absolute;
 	top: 25vh;
+    font-size: 2.5em;
 	
 }
 .hero_content a{
 	color: var(--main_bg);
 	background-color: var(--alert_color);
 	width: 25vw;
-	position: relative;;
+	position: relative;
 	top: 60vh;
 }
 .wide_skinny {
@@ -146,6 +148,9 @@ nav .logo{
 }
 
 .normal_content {}
+
+
+
 
 /*--------page sections specifics-------*/
 .services {
@@ -175,3 +180,6 @@ nav .logo{
 	background-size: cover;
 	background-position: center;
 }
+
+
+

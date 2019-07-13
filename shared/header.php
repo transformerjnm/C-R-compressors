@@ -8,6 +8,8 @@
 	<!-- set browser color to them color. only supported in sertain mobile devices as of 5/13/19-->
 	<meta name="theme-color" content="color">
 	<link rel="stylesheet preload" type="text/css" href="css/styles.css">
+	
+	<link rel="stylesheet preload" href="css/animate.css">
 
 	<!-- ADD DESCRIPTION SEO OPT JASON LD---->
 	<meta name="description" content="" />

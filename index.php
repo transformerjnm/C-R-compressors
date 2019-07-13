@@ -1,14 +1,17 @@
 <?php require("shared/header.php")?>
 <section class="hero_section">
+<video autoplay loop muted>
+    <source src="images/smoke.mp4" type="video/MP4">
+</video>
 	<div class="hero_content">
-		<h1>C&amp;R first time customer free evaluation</h1>
-		<span><a href="contact.php?service=eva">Get Free Evaluation</a></span>
+		<h1 id="title">C&amp;R first time customer free evaluation</h1>
+		<span><a href="contact.php?service=eva" id="freeEvaluation">Get Free Evaluation</a></span>
 	</div>
 </section>
 <!-- *****SERVICES***** -->
 <section class="wide_skinny services" id="services_id">
 	<div class="flexbox">
-		<div class="flex_item">
+		<div class="flex_item" id="services_animate">
 			<h4>evaluation</h4>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio praesentium perferendis quae, natus officia sapiente maiores, quas sequi voluptatum ipsa, voluptatem corporis! Corporis asperiores iure, quas in officiis nemo culpa?</p>
 		</div>
@@ -68,5 +71,8 @@
 		</div>
 	</div>
 </section>
+<script src="js/animate.js">
+    //links to animation javascript file
+</script>
 <?php include("shared/footer.php")?>
 
