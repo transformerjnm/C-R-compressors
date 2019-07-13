@@ -1,17 +1,14 @@
+
         //---------title animation----------
 window.addEventListener('load', function(){
         var title = document.getElementById("title");
         var button = document.getElementById("freeEvaluation");
         var services = document.getElementById("services_animate");
           //title animation
-        title.className = "fade-in";
-      
-          
-        
+        title.className = "fade-in";      
     });
 
-
-        //------scroll animations-------
+//------scroll animations-------
 const boxes = document.querySelector("div.flex_item");
 
 window.addEventListener('scroll', () => {
@@ -21,16 +18,7 @@ window.addEventListener('scroll', () => {
     
     console.log(boxes.getBoundingClientRect().top); // boxes are in viewport at 422
     
-    
-
-    
-    
-    
-
-    
 }); //end of scroll event
-
-
 
 //functions
 

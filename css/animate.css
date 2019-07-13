@@ -1,4 +1,7 @@
+
         /* title animations */
+=======
+/* title animations */
 .fade-in {
 	opacity: 1;
 	animation-name: fadeInOpacity;
@@ -28,13 +31,12 @@ video{
         filter: blur(0);
 	}
 }
-
-        /* evaluate button animations */
+ /* evaluate button animations */
+/* button animations */
 .hideMe1 {
   animation: hideMe 2s;
   animation-fill-mode: forwards;
 }
-
 
 @keyframes hideMe {
   0% {
@@ -50,10 +52,7 @@ video{
     opacity: 1;
   }
 }
-
-
         /* services animation */
-
 
 @keyframes fadeMe{
     0%{
@@ -72,5 +71,3 @@ video{
         opacity: 1;
     }
 }
-
-
