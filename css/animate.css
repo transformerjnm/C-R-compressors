@@ -1,3 +1,6 @@
+
+        /* title animations */
+=======
 /* title animations */
 .fade-in {
 	opacity: 1;
@@ -7,31 +10,33 @@
 	animation-duration: 2s;
 }
 
+video{
+    object-fit: cover;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    position: absolute; /* this fixed the button problem */
+}
+
 @keyframes fadeInOpacity {
 	0% {
 		opacity: 0;
+        transform: rotateY(90deg);
+        filter: blur(10px);
 	}
-    25%{
-        opacity: 0.2;
-    }
-    50%{
-        opacity: 0.5;
-    }
-    75%{
-        opacity: 0.7;
-    }
     
 	100% {
 		opacity: 1;
+        transform: rotateY(0deg);
+        filter: blur(0);
 	}
 }
-
+ /* evaluate button animations */
 /* button animations */
 .hideMe1 {
   animation: hideMe 2s;
   animation-fill-mode: forwards;
 }
-
 
 @keyframes hideMe {
   0% {
@@ -46,4 +51,23 @@
   100% {
     opacity: 1;
   }
+}
+        /* services animation */
+
+@keyframes fadeMe{
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity: 0.2;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    75%{
+        opacity: 0.7;
+    }
+    100%{
+        opacity: 1;
+    }
 }

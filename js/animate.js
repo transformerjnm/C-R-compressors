@@ -1,43 +1,24 @@
-//title animation
-    window.addEventListener('load', function(){
+
+        //---------title animation----------
+window.addEventListener('load', function(){
         var title = document.getElementById("title");
         var button = document.getElementById("freeEvaluation");
+        var services = document.getElementById("services_animate");
           //title animation
-        title.className = "fade-in";
-      
-          //evaluation button animation
-        button.className = "hideMe1";
-        
+        title.className = "fade-in";      
     });
 
-
-//scroll animations
+//------scroll animations-------
+const boxes = document.querySelector("div.flex_item");
 
 window.addEventListener('scroll', () => {
-    
-        //scrollheight of document - height of the window; to get total amount of scrollable height
-    const scrollable = document.documentElement.scrollHeight - window.innerHeight; 
-    
-        //website scrolls down 1295 pixels (as of july 8th 2019 7:27p.m)
-    const scrolled = window.scrollY; 
         
+        // services animation below
+    console.log(window.innerHeight); //space between the top and bottom of the browser 524
     
-        //left off here WBY
-    if(scrolled > 0){
-            animatesmoke();
-       }
+    console.log(boxes.getBoundingClientRect().top); // boxes are in viewport at 422
     
-        
-    /*    //if scrolled to the bottom
-    if(Math.ceil(scrolled) === scrollable){
-        
-        alert('youve reached the bottom!');
-        
-    }*/
-    
-});
-
-
+}); //end of scroll event
 
 //functions
 

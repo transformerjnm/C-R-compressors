@@ -63,6 +63,7 @@ nav .logo{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
+    
 }
 
 .flex_item {
@@ -126,7 +127,7 @@ nav .logo{
 	color: var(--main_bg);
 	background-color: var(--alert_color);
 	width: 25vw;
-	position: relative;;
+	position: relative;
 	top: 60vh;
 }
 .wide_skinny {
