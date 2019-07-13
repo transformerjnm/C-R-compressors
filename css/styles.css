@@ -63,11 +63,12 @@ nav .logo{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
-    
+  padding-top: 2rem;
+	padding-bottom: 2rem;
 }
 
 .flex_item {
-	overflow: hidden;
+	overflow: hidden; 
 	height: 20vh;
 	width: 15vw;
 	box-shadow: 0 0 10px var(--main_bg);
@@ -109,7 +110,6 @@ nav .logo{
 	background-position: center;
 	color: var(--main_bg);
 	min-height: 100vh;
-	margin-bottom: -5vw;
 }
 .hero_content{
 	text-align: center;
@@ -136,6 +136,8 @@ nav .logo{
 	clip-path: polygon(0% 0%, 100% 5vw, 100% calc(100% - 5vw), 0% 100%);
   shape-outside: polygon(0% 0%, 100% 5vw, 100% calc(100% - 5vw), 0% 100%);
 	padding: 5vw 1rem 5vw 1rem;
+	margin-top: -5vw;
+	margin-bottom: -5vw;
 }
 
 .skinny_wide {
@@ -144,10 +146,13 @@ nav .logo{
 	clip-path: polygon(0 5vw, 100% 0, 100% 100%, 0 calc(100% - 5vw));
 	shape-outside: polygon(0 5vw, 100% 0, 100% 100%, 0 calc(100% - 5vw));
 	padding: 5vw 1rem 5vw 1rem;
-
+  margin-top: -5vw;
+	margin-bottom: -5vw;
 }
-
-.normal_content {}
+.normal_content {
+	padding-top: 5vw;
+	padding-bottom: 5vw;
+}
 
 
 
