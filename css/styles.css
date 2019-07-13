@@ -12,6 +12,8 @@ black
 	--accent_color: #003478;
 	--accent_color_rgba: rgba(0,52,120,.75);
 	--alert_color: #b50006;
+	--accent_gradient: rgba(0,52,120,.5);
+	--alert_gradient: rgba(359,0,3,.5);
 }
 
 html {
@@ -105,7 +107,7 @@ nav .logo{
 
 /*----sections styles---*/
 .hero_section {
-	background-image: url("../images/factory.jpg");
+	background-image: linear-gradient(to bottom right, var(--alert_gradient), var(--accent_gradient)),url("../images/factory.jpg");
 	background-size: cover;
 	background-position: center;
 	color: var(--main_bg);
@@ -171,10 +173,11 @@ nav .logo{
 	min-height: 50vh;
 	padding-left: 1rem;
 	padding-right: 1rem;
-	background-image: url(../images/welding_repair.jpg);
 	background-size: cover;
 	background-position: center;
+	background-image: linear-gradient(to bottom right, var(--alert_gradient), var(--accent_gradient)), url(../images/welding_repair.jpg);
 }
+	
 
 .area {
 	min-height: 50vh;
@@ -183,6 +186,7 @@ nav .logo{
 	background-image: url(../images/city.jpg);
 	background-size: cover;
 	background-position: center;
+	background-image: linear-gradient(to bottom right, var(--alert_gradient), var(--accent_gradient)), url(../images/city.jpg);
 }
 
 
