@@ -1,9 +1,9 @@
 
         
 /* title animations */
-.fade-in {
+.fade_in {
 	opacity: 1;
-	animation-name: fadeInOpacity;
+	animation-name: fade_in_opacity;
 	animation-iteration-count: 1;
 	animation-timing-function: ease-in;
 <<<<<<< Updated upstream
@@ -21,7 +21,7 @@ video{
     position: absolute; /* this fixed the button problem */
 }
 
-@keyframes fadeInOpacity {
+@keyframes fade_in_opacity{
 	0% {
 				opacity: .25;
         transform: rotateY(90deg);
