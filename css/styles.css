@@ -11,13 +11,14 @@ black
 	--text_color: black;
 	--accent_color: #003478;
 	--accent_color_rgba: rgba(0,52,120,.75);
-	--alert_color: #b50006;
 	--accent_gradient: rgba(0,52,120,.5);
+	--alert_color: #b50006;
 	--alert_gradient: rgba(359,0,3,.5);
 }
 
 html {
   box-sizing: border-box;
+	font-size: 16px;
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -32,6 +33,9 @@ a{
 	padding: .5rem;
 	text-decoration: none;
 }
+p{
+	line-height: 150%;
+}
 nav{
 	height: 5rem;
 	position: fixed;
@@ -43,12 +47,15 @@ nav{
 }
 nav ul {
 	margin: 0;
+	padding: 0;
+	padding-left: 1.5rem;
 	width: 80vw;
 	display: inline;
 }
 nav li{
 	display: inline;
 	height: 3rem;
+	padding: .5rem;
 }
 nav a {
 	color: var(--main_bg);
@@ -78,21 +85,13 @@ nav .logo{
 	background-color: var(--main_bg);
 	color: var(--text_color);
 }
-.flex_item:hover{
-	animation-name: scale_to_screen;
-	animation-duration: .2s;
-	animation-fill-mode: forwards;
-}
-@keyframes scale_to_screen{
-	from{}
-	to{width: 30vw;
-		height: auto;	
-	}
-}
+/* flex item animation on hover in animate.css*/
+
 /*grid*/
 .grd_col_2 {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+	padding: 1rem;
 }
 
 .grd_item_1 {
@@ -103,10 +102,16 @@ nav .logo{
 .grd_item_2 {
 	grid-column-start: 2;
 	grid-column-end: 2;
+	padding-left: 2rem;
 }
 
 /*----sections styles---*/
+section{
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
 .hero_section {
+	padding: 0;
 	background-image: linear-gradient(to bottom right, var(--alert_gradient), var(--accent_gradient)),url("../images/factory.jpg");
 	background-size: cover;
 	background-position: center;
@@ -126,11 +131,11 @@ nav .logo{
 	
 }
 .hero_content a{
-	color: var(--main_bg);
-	background-color: var(--alert_color);
+
 	width: 25vw;
 	position: relative;
 	top: 60vh;
+	
 }
 .wide_skinny {
 	background-color: var(--accent_color);
@@ -154,16 +159,10 @@ nav .logo{
 .normal_content {
 	padding-top: 5vw;
 	padding-bottom: 5vw;
+  color: var(--main_bg);
 }
-
-
-
 
 /*--------page sections specifics-------*/
-.services {
-	padding-left: 1rem;
-	padding-right: 1rem;
-}
 
 .about {
 	min-height: 50vh;
@@ -171,23 +170,26 @@ nav .logo{
 
 .time {
 	min-height: 50vh;
-	padding-left: 1rem;
-	padding-right: 1rem;
 	background-size: cover;
 	background-position: center;
 	background-image: linear-gradient(to bottom right, var(--alert_gradient), var(--accent_gradient)), url(../images/welding_repair.jpg);
 }
 	
-
 .area {
 	min-height: 50vh;
-	padding-left: 1rem;
-	padding-right: 1rem;
 	background-image: url(../images/city.jpg);
 	background-size: cover;
 	background-position: center;
 	background-image: linear-gradient(to bottom right, var(--alert_gradient), var(--accent_gradient)), url(../images/city.jpg);
 }
-
-
-
+.contact_button{
+		color: var(--main_bg);
+	background-color: var(--alert_color);
+	border-radius: 5px 15px 5px 15px;
+}
+/*page flow*/
+footer{
+	padding-top: 5vw;
+	padding-bottom: 5vw;
+	color: var(--text_color);
+}
