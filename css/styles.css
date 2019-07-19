@@ -99,10 +99,19 @@ nav .logo{
 	grid-column-end: 1;
 }
 
+.grd_item_1 h3{
+    position: relative;
+}
+
+.grd_item_1 p{
+    position: relative;
+}
+
 .grd_item_2 {
 	grid-column-start: 2;
 	grid-column-end: 2;
 	padding-left: 2rem;
+    position: relative;
 }
 
 /*----sections styles---*/

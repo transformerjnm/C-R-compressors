@@ -1,12 +1,16 @@
 
-        /* title animations */
+        
 /* title animations */
 .fade-in {
 	opacity: 1;
 	animation-name: fadeInOpacity;
 	animation-iteration-count: 1;
 	animation-timing-function: ease-in;
+<<<<<<< Updated upstream
 	animation-duration: .75s;
+=======
+	animation-duration: 0.75s;
+>>>>>>> Stashed changes
 }
 
 video{
@@ -30,46 +34,8 @@ video{
         filter: blur(0);
 	}
 }
- /* evaluate button animations */
-/* button animations */
-.hideMe1 {
-  animation: hideMe 2s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes hideMe {
-  0% {
-    opacity: 1;
-  }
-  25% {
-    opacity: 0;
-  }
-  75% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-        /* services animation */
-
-@keyframes fadeMe{
-    0%{
-        opacity: 0;
-    }
-    25%{
-        opacity: 0.2;
-    }
-    50%{
-        opacity: 0.5;
-    }
-    75%{
-        opacity: 0.7;
-    }
-    100%{
-        opacity: 1;
-    }
-}
+ 
+ 
 /* services flex item */
 .flex_item:hover{
 	animation-name: scale_to_screen;
@@ -82,3 +48,84 @@ video{
 		height: auto;	
 	}
 }
+
+
+/*contact us service area*/
+
+    /*h3*/
+@keyframes slide_in_from_right{
+    from{
+        left: 900px;
+        opacity: 0.5;
+    }
+    to{
+        left: 0;
+        opacity: 1;
+    }
+}
+
+.slide_in_right{
+    
+    animation: slide_in_from_right;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    
+}
+
+/*paragraph*/
+@keyframes slide_in_from_left{
+    
+    from{
+        left: -500px;
+        opacity: 0.5;
+    }
+    to{
+        left: 0;
+        opacity: 1;
+    }
+    
+}
+
+.slide_in_left{
+    animation: slide_in_from_left;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+
+
+/*i need a repair section animations*/
+@keyframes pop_in{
+    
+    from{
+        
+        right: -200px;
+        opacity: 0.5;
+        font-size: 2em;
+        
+    }
+    to{
+        
+        right: 0;
+        opacity: 1;
+        font-size: 1em;
+        
+    }
+    
+}
+
+.pop_in{
+    
+    animation-name: pop_in;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    
+}
+
+
+
+
+
+
+
+
