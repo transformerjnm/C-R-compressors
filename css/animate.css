@@ -70,3 +70,15 @@ video{
         opacity: 1;
     }
 }
+/* services flex item */
+.flex_item:hover{
+	animation-name: scale_to_screen;
+	animation-duration: .2s;
+	animation-fill-mode: forwards;
+}
+@keyframes scale_to_screen{
+	from{}
+	to{width: 30vw;
+		height: auto;	
+	}
+}

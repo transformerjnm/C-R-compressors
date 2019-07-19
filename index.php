@@ -1,11 +1,12 @@
 <?php require("shared/header.php")?>
-<section class="hero_section">
+<section class="hero_section" id="hero_id">
+<!-- smoke effect-->
 <video autoplay loop muted>
     <source src="images/smoke.mp4" type="video/MP4">
 </video>
 	<div class="hero_content">
 		<h1 id="title">C&amp;R first time customer free evaluation</h1>
-		<span><a href="contact.php?service=eva" id="freeEvaluation">Get Free Evaluation</a></span>
+		<span><a href="contact.php?service=eva" class="contact_button">Get Free Evaluation</a></span>
 	</div>
 </section>
 <!-- *****SERVICES***** -->
@@ -42,7 +43,7 @@
 		</div>
 		<div class="grd_item_2">
 			<h3>contact us about service area</h3>
-			<span><a href="contact.php?service=area">Service area</a></span>
+			<span><a href="contact.php?service=area" class="contact_button">Service area</a></span>
 		</div>
 	</div>
 </section>
@@ -51,7 +52,7 @@
 	<div class="grd_col_2">
 		<div class="grd_item_1">
 			<h3>I need repair</h3>
-			<span><a href="contact.php?serive=repair">repair</a></span>
+			<span><a href="contact.php?serive=repair" class="contact_button">repair</a></span>
 		</div>
 		<div class="grd_item_2">
 			<h3>24/7 Emergancy repair</h3>
@@ -67,7 +68,7 @@
 		</div>
 		<div class="grd_item_2">
 			<h3>Have questions about us</h3>
-			<span><a href="contact.php?service=question">Questions</a></span>
+			<span><a href="contact.php?service=question" class="contact_button">Questions</a></span>
 		</div>
 	</div>
 </section>
