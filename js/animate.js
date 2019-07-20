@@ -78,6 +78,19 @@ function animate_contact_services_area_p(){
         
     }
     
+    /*in viewport scrolling up and not out of viewport*/
+	if(area_paragraph_position > 0 && area_paragraph_position < screen_position){
+		area_paragraph.classList.add("slide_in_left");
+	}
+	/*if scrolled passed remove class*/
+    if(area_paragraph_position < 0){
+		area_paragraph.classList.remove("slide_in_left");
+		}
+    /*if scrolled about remove class*/
+	if(area_paragraph_position > screen_position){
+		area_paragraph.classList.remove("slide_in_left");
+	}
+    
 }
 
         //services area title and button
@@ -93,6 +106,19 @@ function animate_contact_services_area_contact(){
         contact_area_div.classList.add("fade_in");
         
     }
+    
+    /*in viewport scrolling up and not out of viewport*/
+	if(contact_area_position > 0 && contact_area_position < screen_position){
+		contact_area_div.classList.add("fade_in");
+	}
+	/*if scrolled passed remove class*/
+    if(contact_area_position < 0){
+		contact_area_div.classList.remove("fade_in");
+		}
+    /*if scrolled about remove class*/
+	if(contact_area_position > screen_position){
+		contact_area_div.classList.remove("fade_in");
+	}
     
 }
 
@@ -110,6 +136,23 @@ function animate_repair(){
         repair.classList.add("fade_in");
         repair_emergancy.classList.add("pop_in");
     }
+    
+    
+    /*in viewport scrolling up and not out of viewport*/
+	if(repair_position > 0 && repair_position < screen_position){
+		repair.classList.add("fade_in");
+        repair_emergancy.classList.add("pop_in");
+	}
+	/*if scrolled passed remove class*/
+    if(repair_position < 0){
+		repair.classList.remove("fade_in");
+        repair_emergancy.classList.remove("pop_in");
+		}
+    /*if scrolled about remove class*/
+	if(repair_position > screen_position){
+		repair.classList.remove("fade_in");
+        repair_emergancy.classList.remove("pop_in");
+	}
     
 }
 
