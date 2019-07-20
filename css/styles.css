@@ -36,6 +36,7 @@ a{
 p{
 	line-height: 150%;
 }
+/*-----navigation*------*/
 nav{
 	height: 5rem;
 	position: fixed;
@@ -48,7 +49,7 @@ nav{
 nav ul {
 	margin: 0;
 	padding: 0;
-	padding-left: 1.5rem;
+	padding-left: 1rem;
 	width: 80vw;
 	display: inline;
 }
@@ -66,50 +67,7 @@ nav .logo{
 	position: relative;
 	top: 20%;
 }
-/*------custom display layout------*/
-/*flexbox*/
-.flexbox {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-  padding-top: 2rem;
-	padding-bottom: 2rem;
-}
-
-.flex_item {
-	overflow: hidden; 
-	height: 20vh;
-	width: 15vw;
-	box-shadow: 0 0 10px var(--main_bg);
-	text-align: center;
-	background-color: var(--main_bg);
-	color: var(--text_color);
-}
-/* flex item animation on hover in animate.css*/
-
-/*grid*/
-.grd_col_2 {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	padding: 1rem;
-}
-
-.grd_item_1 {
-	grid-column-start: 1;
-	grid-column-end: 1;
-}
-
-.grd_item_2 {
-	grid-column-start: 2;
-	grid-column-end: 2;
-	padding-left: 2rem;
-}
-
-/*----sections styles---*/
-section{
-	padding-left: 1rem;
-	padding-right: 1rem;
-}
+/*-----hero content----*/
 .hero_section {
 	padding: 0;
 	background-image: linear-gradient(to bottom right, var(--alert_gradient), var(--accent_gradient)),url("../images/factory.jpg");
@@ -137,6 +95,12 @@ section{
 	top: 60vh;
 	
 }
+
+/*-----sections styles-----*/
+section{
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
 .wide_skinny {
 	background-color: var(--accent_color);
 	color: var(--main_bg);
@@ -162,8 +126,56 @@ section{
   color: var(--main_bg);
 }
 
-/*--------page sections specifics-------*/
+/*------custom display layout------*/
+/*flexbox*/
+.flexbox {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+  padding-top: 2rem;
+	padding-bottom: 2rem;
+}
 
+.flex_item {
+	overflow: hidden; 
+	height: 20vh;
+	width: 15vw;
+	color: var(--main_bg);
+	box-shadow: 0 0 10px black;
+	border-radius: 5px 15px 5px 15px;
+	text-align: center;
+	background-color: var(--accent_color);
+	background-image: linear-gradient(to bottom right, var(--alert_gradient), var(--accent_gradient));
+	
+	
+}
+/* flex item animation on hover in animate.css*/
+
+/*------grid-------*/
+.grd_col_2 {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding: 1rem;
+}
+
+.grd_item_1 {
+	grid-column-start: 1;
+	grid-column-end: 1;
+}
+
+.grd_item_2 {
+	grid-column-start: 2;
+	grid-column-end: 2;
+	padding-left: 2rem;
+}
+grd_item_3{
+	grid-column-start: 1;
+	grid-column-end: 2;
+}
+
+
+/*--------page sections specifics-------*/
+/*home page*/
 .about {
 	min-height: 50vh;
 }
@@ -181,13 +193,42 @@ section{
 	background-size: cover;
 	background-position: center;
 	background-image: linear-gradient(to bottom right, var(--alert_gradient), var(--accent_gradient)), url(../images/city.jpg);
+		border-bottom: 1px solid var(--accent_color_rgba);
 }
+
 .contact_button{
 		color: var(--main_bg);
 	background-color: var(--alert_color);
 	border-radius: 5px 15px 5px 15px;
+	box-shadow: 3px 3px 10px black;
 }
-/*page flow*/
+/*contact page*/
+
+.blank_space{
+	height: 80vh;
+}
+.contact_call{
+	color: var(--main_bg);
+	background-color: var(--accent_color);
+	position: absolute;
+	height: 10rem;
+	top: 10rem;
+	left: 10vw;
+	width: 80vw;
+	border-radius: 5px 15px 5px 15px;
+	box-shadow: 0 0 10px black;
+}
+.contact_form{
+	color: var(--main_bg);
+	background-color: var(--accent_color);
+	position: absolute;
+	top: 25rem;
+	left: 10vw;
+	width: 80vw;
+	border-radius: 5px 15px 5px 15px;
+	box-shadow: 0 0 10px black;
+}
+/*-----footer-----*/
 footer{
 	padding-top: 5vw;
 	padding-bottom: 5vw;

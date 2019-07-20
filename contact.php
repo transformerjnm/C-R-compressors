@@ -16,10 +16,20 @@
 </head>
 
 <body>
-
-
 	<?php include("shared/header.php")?>
-
+	<div class="blank_space"></div>
+	<div class="blank_space wide_skinny"></div>
+	<div class="blank_space"></div>
+	<section class="contact_call">
+			<h1>Call for "custom php msg here"</h1>
+			<ul>
+				<li>Email: asdnasdkjasdkjas</li>
+				<li>Phone: 000-000-0000</li>
+			</ul>
+	</section>
+	<section class="contact_form">
+		<h1>Contact us for "custom php msg here"</h1>
+	</section>
 
 
 	<?php include("shared/footer.php")?>
