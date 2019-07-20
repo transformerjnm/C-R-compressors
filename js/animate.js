@@ -1,7 +1,8 @@
         //---------title animation----------
 window.addEventListener('load', function(){
         var title = document.getElementById("title");
-          //title animation
+        
+        title.classList.add("fade_in"); //title animation
       
         
     });
@@ -20,7 +21,6 @@ let boxes = document.querySelectorAll('.flex_item');
 
 window.addEventListener('scroll', () => {
         
-        // services animation below
         //  contact us services animation below
     animate_contact_services_area_h3();
     animate_contact_services_area_p();
