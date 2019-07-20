@@ -1,127 +1,103 @@
-
-        /* title animations */
 /* title animations */
-.fade_in {
+/* title animations */
+.fade-in {
 	opacity: 1;
-	animation-name: fade_in_opacity;
+	animation-name: fadeInOpacity;
 	animation-iteration-count: 1;
 	animation-timing-function: ease-in;
 	animation-duration: .75s;
 }
 
-video{
-    object-fit: cover;
-    opacity: 0.5;
-    width: 100%;
-    height: 100%;
-    position: absolute; /* this fixed the button problem */
+video {
+	object-fit: cover;
+	opacity: 0.5;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	/* this fixed the button problem */
 }
 
-@keyframes fade_in_opacity{
+@keyframes fadeInOpacity {
 	0% {
-        opacity: .25;
-        transform: rotateY(90deg);
-        filter: blur(10px);
+		opacity: .25;
+		transform: rotateY(90deg);
+		filter: blur(10px);
 	}
-    
+
 	100% {
 		opacity: 1;
-        transform: rotateY(0deg);
-        filter: blur(0);
+		transform: rotateY(0deg);
+		filter: blur(0);
 	}
 }
- 
 
+/* evaluate button animations */
+/* button animations */
+.hideMe1 {
+	animation: hideMe 2s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes hideMe {
+	0% {
+		opacity: 1;
+	}
+
+	25% {
+		opacity: 0;
+	}
+
+	75% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+/* services animation */
+
+@keyframes fadeMe {
+	0% {
+		opacity: 0;
+	}
+
+	25% {
+		opacity: 0.2;
+	}
+
+	50% {
+		opacity: 0.5;
+	}
+
+	75% {
+		opacity: 0.7;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
 
 /* services flex item */
-.flex_item:hover{
+.flex_item:hover {
 	animation-name: scale_to_screen;
 	animation-duration: .2s;
 	animation-fill-mode: forwards;
 }
-@keyframes scale_to_screen{
-	from{}
-	to{width: 30vw;
-		height: auto;	
+
+@keyframes scale_to_screen {
+	from {}
+
+	to {
+		width: 30vw;
+		height: auto;
 	}
 }
-
-/*area conteact us services animations*/
-
-@keyframes slide_in_from_right{
-    
-    from{
-        left: 700px;
-        opacity: 0.2;
-    }
-    to{
-        left: 0;
-        opacity: 1;
-    }
-    
+.contact_button:active{
+	font-size: 1.25rem;
 }
-
-.slide_in_right{
-    animation-name: slide_in_from_right;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
+.contact_button:hover{
+	color: lightgray;
 }
-
-
-@keyframes slide_in_from_left{
-    
-    from{
-        left: -700px;
-        opacity: 0.2;
-    }
-    to{
-        left: 0;
-        opacity: 1;
-    }
-    
-}
-
-.slide_in_left{
-    
-    animation-name: slide_in_from_left;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    
-}
-
-
-/*i need repair section animations*/
-
-@keyframes pop{
-    
-    from{
-        
-        opacity: 0.2;
-        font-size: 2em;
-    }
-    to{
-        
-        opacity: 1;
-        font-size: 1.5em;
-    }
-    
-}
-
-.pop_in{
-    
-    animation-name: pop;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    
-}
-
-
-
-
-
-
-
-
-
-
-
