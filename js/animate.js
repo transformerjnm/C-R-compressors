@@ -45,15 +45,22 @@ function animate_contact_services_area_h3(){
     let area_position = area_title.getBoundingClientRect().top; //gets the top position of h3
     let screen_position = window.innerHeight; //gets the height of the window
     
-
-    if(area_position < screen_position){
-       
-        area_title.classList.add("slide_in_right");
-        
-       
-    }
-    
-    
+		/*scrolled into viewport and has not scrolled out of viewport add class*/
+    if(area_position < screen_position && area_position > 0){       
+        area_title.classList.add("slide_in_right");           
+		} 
+   /*in viewport scrolling up and not out of viewport*/
+	if(area_position > 0 && area_position < screen_position){
+		area_title.classList.add("slide_in_right");
+	}
+	/*if scrolled passed remove class*/
+    if(area_position < 0){
+		area_title.classList.remove("slide_in_right");
+		}
+    /*if scrolled about remove class*/
+	if(area_position > screen_position){
+		area_title.classList.remove("slide_in_right");
+	}
     
     
 }
