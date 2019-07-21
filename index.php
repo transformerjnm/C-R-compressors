@@ -72,7 +72,7 @@
 		</div>
 	</div>
 </section>
-<script src="js/animate.js">
+<script src="js/animate.js" defer>
     //links to animation javascript file
 </script>
 <?php include("shared/footer.php")?>

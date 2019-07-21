@@ -4,13 +4,12 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+	<!-- Font Awsome -->
+	<link rel="stylesheet preconnect" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 	<!-- set browser color to them color. only supported in sertain mobile devices as of 5/13/19-->
 	<meta name="theme-color" content="color">
 	<link rel="stylesheet preload" type="text/css" href="css/styles.css">
-	
 	<link rel="stylesheet preload" href="css/animate.css">
-
 	<!-- ADD DESCRIPTION SEO OPT JASON LD---->
 	<meta name="description" content="" />
 	<link rel="icon" href="link">
