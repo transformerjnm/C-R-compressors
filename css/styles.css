@@ -77,6 +77,13 @@ nav .logo{
 	color: var(--main_bg);
 	min-height: 100vh;
 }
+.contact_hero_section{
+	padding: 0;
+	background-image: linear-gradient(to bottom right, var(--alert_gradient), var(--accent_gradient)),url("../images/old_phone.jpg");
+	background-size: cover;
+	background-position: center;
+	min-height: 100vh;
+}
 .hero_content{
 	text-align: center;
 	margin: auto;
@@ -90,11 +97,9 @@ nav .logo{
 	
 }
 .hero_content a{
-
 	width: 25vw;
 	position: relative;
 	top: 60vh;
-	
 }
 
 /*-----sections styles-----*/
@@ -227,6 +232,7 @@ grd_item_3{
 	width: 80vw;
 	border-radius: 5px 15px 5px 15px;
 	box-shadow: 0 0 10px black;
+	text-align: center;
 }
 .contact_form{
 	color: var(--main_bg);
@@ -237,6 +243,15 @@ grd_item_3{
 	width: 80vw;
 	border-radius: 5px 15px 5px 15px;
 	box-shadow: 0 0 10px black;
+	text-align: center;
+}
+.contact_align{
+	width: 50%;
+	margin: auto;
+	text-align: left;
+}
+.contact_align ul{
+	list-style-type: none;
 }
 /*-----footer-----*/
 footer{
