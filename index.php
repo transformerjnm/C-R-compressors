@@ -63,10 +63,10 @@
 <section class="skinny_wide about" id="about_id">
 	<div class="grd_col_2">
 		<div class="grd_item_1">
-			<h3>Who We Are</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni facilis optio recusandae eum, omnis iusto. Ratione est, praesentium aspernatur, voluptatem minus pariatur cumque quo facilis omnis libero doloribus tenetur, ea!</p>
+			<h3 id="who_header">Who We Are</h3>
+			<p id="who_p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni facilis optio recusandae eum, omnis iusto. Ratione est, praesentium aspernatur, voluptatem minus pariatur cumque quo facilis omnis libero doloribus tenetur, ea!</p>
 		</div>
-		<div class="grd_item_2">
+		<div class="grd_item_2" id="questions">
 			<h3>Have questions about us</h3>
 			<span><a href="contact.php?service=question" class="contact_button">Questions</a></span>
 		</div>

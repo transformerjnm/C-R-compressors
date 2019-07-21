@@ -26,6 +26,9 @@ window.addEventListener('scroll', () => {
     animate_contact_services_area_p();
     animate_contact_services_area_contact();
     animate_repair();
+    animate_who_we_are_h3();
+    animate_who_we_are_p();
+    animate_who_we_are_questions();
     
     
     
@@ -152,6 +155,106 @@ function animate_repair(){
 	if(repair_position > screen_position){
 		repair.classList.remove("fade_in");
         repair_emergancy.classList.remove("pop_in");
+	}
+    
+}
+
+function animate_who_we_are_h3(){
+    
+    let who_header = document.getElementById("who_header");
+    let who_header_position = who_header.getBoundingClientRect().top;
+    let screen_position = window.innerHeight;
+    
+    if(who_header_position < screen_position){
+       
+        who_header.classList.add("slide_in_right");
+        
+    }
+    
+    /*in viewport scrolling up and not out of viewport*/
+	if(who_header_position > 0 && who_header_position < screen_position){
+		
+        who_header.classList.add("slide_in_right");
+        
+	}
+	/*if scrolled passed remove class*/
+    if(who_header_position < 0){
+	
+        who_header.classList.remove("slide_in_right");
+        
+    }
+    /*if scrolled about remove class*/
+	if(who_header_position > screen_position){
+		
+        who_header.classList.remove("slide_in_right");
+        
+	}
+    
+    
+}
+
+function animate_who_we_are_p(){
+    
+    let who_p = document.getElementById("who_p");
+    let who_p_position = who_p.getBoundingClientRect().top;
+    let screen_position = window.innerHeight;
+    
+    if(who_p_position < screen_position){
+       
+        who_p.classList.add("slide_in_left");
+        
+    }
+    
+    /*in viewport scrolling up and not out of viewport*/
+	if(who_p_position > 0 && who_p_position < screen_position){
+		
+        who_p.classList.add("slide_in_left");
+        
+	}
+	/*if scrolled passed remove class*/
+    if(who_p_position < 0){
+	
+        who_p.classList.remove("slide_in_left");;
+        
+    }
+    /*if scrolled about remove class*/
+	if(who_p_position > screen_position){
+		
+        who_p.classList.remove("slide_in_left");
+        
+	}
+    
+}
+
+function animate_who_we_are_questions(){
+    
+    let questions = document.getElementById("questions");
+    let questions_position = questions.getBoundingClientRect().top;
+    let screen_position = window.innerHeight;
+    
+    if(questions_position < screen_position){
+       
+        questions.classList.add("fade_in");
+        
+    }
+    
+    /*in viewport scrolling up and not out of viewport*/
+	if(questions_position > 0 && questions_position < screen_position){
+		
+        questions.classList.add("fade_in");
+        
+	}
+	/*if scrolled passed remove class*/
+    if(questions_position < 0){
+	
+        questions.classList.remove("fade_in");;
+        
+    }
+    /*if scrolled about remove class*/
+	if(questions_position > screen_position){
+		
+        questions.classList.remove("fade_in");
+        
 	}
     
 }
