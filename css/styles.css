@@ -219,7 +219,7 @@ grd_item_3{
 /*contact page*/
 
 .blank_space{
-	height: 80vh;
+	height: 350px;;
 }
 .contact_call{
 	color: var(--text_color);

@@ -21,6 +21,7 @@
 	<div class="blank_space wide_skinny"></div>
 	<div class="blank_space"></div>
 	<?php 
+	/*Set message based upon which button they clicked to get to this page*/
 	$service = "";
 	if(isset($_GET['service'])){ 
 	  $service = $_GET['service'];
@@ -105,6 +106,7 @@
 
 </html>
 <?php
+	/*Subject of email based upon the services they chose*/
 	$subject="R&C Request For ";
 	if(isset($_POST['submit'])){	
 		if(!empty($_POST['check_list'])){
