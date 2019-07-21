@@ -317,7 +317,7 @@ footer i {
 	}
 }
 /*tablets and phablets*/
-@media only screen and (min-width: 500px){
+@media only screen and (min-width: 550px){
 	html{
 		font-size: 18px;
 	}
