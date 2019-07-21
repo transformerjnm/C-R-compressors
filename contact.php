@@ -51,8 +51,9 @@
 		<h1>Contact us <?php echo $service_msg; ?></h1>
 		<div class="contact_align">
 			<ul>
-				<li>Email: asdnasdkjasdkjas</li>
-				<li>Phone: 000-000-0000</li>
+				<li><a href="mailto:asdasdasdasdasd">Email:  adsasdasdasdasd</a></li>
+				<br>
+				<li><a href="tel:1231231234">Phone: 123-123-1234</a></li>
 			</ul>
 		</div>
 	</section>
@@ -96,6 +97,7 @@
 				<input type="tel" name="Phone" id="Phone">
 				<br><br>
 				<input type="submit" name="submit" value="Contact Us">
+				<br><br>
 			</div>
 		</form>
 	</section>

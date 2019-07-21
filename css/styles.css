@@ -32,6 +32,7 @@ body {
 a{
 	padding: .5rem;
 	text-decoration: none;
+	color: var(--text_color);
 }
 p{
 	line-height: 150%;
@@ -58,10 +59,7 @@ nav li{
 	height: 3rem;
 	padding: .5rem;
 }
-nav a {
-	color: var(--text_color);
 
-}
 nav .logo{
 	width: 3rem;
 	position: relative;
@@ -255,6 +253,31 @@ grd_item_3{
 /*-----footer-----*/
 footer{
 	padding-top: 5vw;
-	padding-bottom: 5vw;
 	color: black;
+}
+footer ul{
+	list-style-type: none;
+	
+}
+footer li {
+	line-height: 150%;
+	padding-top: .5rem;
+	padding-bottom: .5rem;
+}
+footer a {
+	color: black;
+}
+footer span{
+	font-size: .75rem;
+	color: grey;
+	padding: 0;
+	margin: 0;
+}
+footer span a{
+	font-size: .75rem;
+	color: grey;
+}
+footer i {
+	color: blue;
+	font-size: 3rem;
 }
