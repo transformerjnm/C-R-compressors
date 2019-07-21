@@ -52,7 +52,7 @@
 	<div class="grd_col_2">
 		<div class="grd_item_1" id="i_need_repair">
 			<h3>I need repair</h3>
-			<span><a href="contact.php?serive=repair" class="contact_button">repair</a></span>
+			<span><a href="contact.php?service=repair" class="contact_button">repair</a></span>
 		</div>
 		<div class="grd_item_2" id="emergancy">
 			<h3>24/7 Emergancy repair</h3>
