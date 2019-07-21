@@ -109,20 +109,15 @@
 	if(isset($_POST['submit'])){	
 		if(!empty($_POST['check_list'])){
 			foreach($_POST['check_list'] as $service){
-				$subject = $subject . ", " . $service;
-				print_r($_POST['check_list']);
-			}			
+				$subject = $subject . ", " . $service;		
+			}	
 			unset($_POST['submit']);
 			unset($_POST['check_list']);
 			$subject = "";
 		}
 	}
-	
 
-/*	$to = "somebody@example.com";
-  $txt = "Hello world!";
-  $headers = "From: webmaster@example.com" . "\r\n" .
-  "CC: somebodyelse@example.com";*/
+	$to = "somebody@example.com";
 
-/*mail($to,$subject,$txt,$headers);*/
+mail($to,$subject,$msg);
 ?>
