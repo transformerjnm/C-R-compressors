@@ -7,117 +7,128 @@
 	animation-duration: .75s;
 }
 
-video{
-    object-fit: cover;
-    opacity: 0.5;
-    width: 100%;
-    height: 100%;
-    position: absolute; /* this fixed the button problem */
+video {
+	object-fit: cover;
+	opacity: 0.5;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	/* this fixed the button problem */
 }
 
-@keyframes fade_in_opacity{
+@keyframes fade_in_opacity {
 	0% {
-        opacity: .25;
-        transform: rotateY(90deg);
-        filter: blur(10px);
+		opacity: .25;
+		transform: rotateY(90deg);
+		filter: blur(10px);
 	}
-    
+
 	100% {
 		opacity: 1;
-        transform: rotateY(0deg);
-        filter: blur(0);
+		transform: rotateY(0deg);
+		filter: blur(0);
 	}
 }
 
 
 
-/* services flex item */
-.flex_item:hover {
-	animation-name: scale_to_screen;
-	animation-duration: .2s;
-	animation-fill-mode: forwards;
-}
 
-@keyframes scale_to_screen {
-	from {}
-
-	to {
-		width: 30vw;
-		height: auto;
-	}
-}
-.contact_button:active{
+.contact_button:active {
 	font-size: 1.25rem;
 }
-.contact_button:hover{
+
+.contact_button:hover {
 	color: lightgray;
 }
 
 /*area conteact us services animations*/
 
-@keyframes slide_in_from_right{
-    
-    from{
-        left: 700px;
-        opacity: 0.2;
-    }
-    to{
-        left: 0;
-        opacity: 1;
-    }
-    
+@keyframes slide_in_from_right {
+
+	from {
+		left: 700px;
+		opacity: 0.2;
+	}
+
+	to {
+		left: 0;
+		opacity: 1;
+	}
+
 }
 
-.slide_in_right{
-    animation-name: slide_in_from_right;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
+.slide_in_right {
+	animation-name: slide_in_from_right;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
 }
 
 
-@keyframes slide_in_from_left{
-    
-    from{
-        left: -700px;
-        opacity: 0.2;
-    }
-    to{
-        left: 0;
-        opacity: 1;
-    }
-    
+@keyframes slide_in_from_left {
+
+	from {
+		left: -700px;
+		opacity: 0.2;
+	}
+
+	to {
+		left: 0;
+		opacity: 1;
+	}
+
 }
 
-.slide_in_left{
-    
-    animation-name: slide_in_from_left;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    
+.slide_in_left {
+
+	animation-name: slide_in_from_left;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+
 }
 
 
 /*i need repair section animations*/
 
-@keyframes pop{
-    
-    from{
-        
-        opacity: 0.2;
-        font-size: 2em;
-    }
-    to{
-        
-        opacity: 1;
-        font-size: 1.5em;
-    }
-    
+@keyframes pop {
+
+	from {
+
+		opacity: 0.2;
+		font-size: 2em;
+	}
+
+	to {
+
+		opacity: 1;
+		font-size: 1.5em;
+	}
+
 }
 
-.pop_in{
-    
-    animation-name: pop;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    
+.pop_in {
+
+	animation-name: pop;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+
+}
+
+/*media query for desktop*/
+@media screen and (min-width: 800px) {
+
+	/* services flex item */
+	.flex_item:hover {
+		animation-name: scale_to_screen;
+		animation-duration: .2s;
+		animation-fill-mode: forwards;
+	}
+
+	@keyframes scale_to_screen {
+		from {}
+
+		to {
+			width: 30vw;
+			height: auto;
+		}
+	}
 }
