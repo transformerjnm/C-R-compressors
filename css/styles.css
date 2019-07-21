@@ -7,8 +7,7 @@ grey-white: rgba(240,240,240,1) #f0f0f0
 black
 */
 :root {
-	--main_bg: #f0f0f0;
-	--text_color: black;
+	--text_color: #f0f0f0;
 	--accent_color: #003478;
 	--accent_color_rgba: rgba(0,52,120,.75);
 	--accent_gradient: rgba(0,52,120,.5);
@@ -28,7 +27,7 @@ html {
 
 body {
 	margin: 0;
-	background-color: var(--main_bg);
+	background-color: var(--text_color);
 }
 a{
 	padding: .5rem;
@@ -41,7 +40,7 @@ p{
 nav{
 	height: 5rem;
 	position: fixed;
-	color: var(--main_bg);
+	color: var(--text_color);
 	background-color: var(--accent_color_rgba);
 	width: 100vw;
 	z-index: 2;
@@ -60,7 +59,7 @@ nav li{
 	padding: .5rem;
 }
 nav a {
-	color: var(--main_bg);
+	color: var(--text_color);
 
 }
 nav .logo{
@@ -74,7 +73,7 @@ nav .logo{
 	background-image: linear-gradient(to bottom right, var(--alert_gradient), var(--accent_gradient)),url("../images/factory.jpg");
 	background-size: cover;
 	background-position: center;
-	color: var(--main_bg);
+	color: var(--text_color);
 	min-height: 100vh;
 }
 .contact_hero_section{
@@ -109,7 +108,7 @@ section{
 }
 .wide_skinny {
 	background-color: var(--accent_color);
-	color: var(--main_bg);
+	color: var(--text_color);
 	clip-path: polygon(0% 0%, 100% 5vw, 100% calc(100% - 5vw), 0% 100%);
   shape-outside: polygon(0% 0%, 100% 5vw, 100% calc(100% - 5vw), 0% 100%);
 	padding: 5vw 1rem 5vw 1rem;
@@ -119,7 +118,7 @@ section{
 
 .skinny_wide {
 	background-color: var(--accent_color);
-	color: var(--main_bg);
+	color: var(--text_color);
 	clip-path: polygon(0 5vw, 100% 0, 100% 100%, 0 calc(100% - 5vw));
 	shape-outside: polygon(0 5vw, 100% 0, 100% 100%, 0 calc(100% - 5vw));
 	padding: 5vw 1rem 5vw 1rem;
@@ -129,7 +128,7 @@ section{
 .normal_content {
 	padding-top: 5vw;
 	padding-bottom: 5vw;
-  color: var(--main_bg);
+  color: var(--text_color);
 }
 
 /*------custom display layout------*/
@@ -146,7 +145,7 @@ section{
 	overflow: hidden; 
 	height: 20vh;
 	width: 15vw;
-	color: var(--main_bg);
+	color: var(--text_color);
 	box-shadow: 0 0 10px black;
 	border-radius: 5px 15px 5px 15px;
 	text-align: center;
@@ -212,7 +211,7 @@ grd_item_3{
 }
 
 .contact_button{
-		color: var(--main_bg);
+		color: var(--text_color);
 	background-color: var(--alert_color);
 	border-radius: 5px 15px 5px 15px;
 	box-shadow: 3px 3px 10px black;
@@ -223,7 +222,7 @@ grd_item_3{
 	height: 80vh;
 }
 .contact_call{
-	color: var(--main_bg);
+	color: var(--text_color);
 	background-color: var(--accent_color);
 	position: absolute;
 	height: 10rem;
@@ -235,7 +234,7 @@ grd_item_3{
 	text-align: center;
 }
 .contact_form{
-	color: var(--main_bg);
+	color: var(--text_color);
 	background-color: var(--accent_color);
 	position: absolute;
 	top: 25rem;
@@ -257,5 +256,5 @@ grd_item_3{
 footer{
 	padding-top: 5vw;
 	padding-bottom: 5vw;
-	color: var(--text_color);
+	color: black;
 }
