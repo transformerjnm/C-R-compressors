@@ -74,6 +74,8 @@ nav .logo {
 	top: 20%;
 }
 
+/*-----mobile nav-----*/
+
 /*-----hero content----*/
 .hero_section {
 	padding: 0;
@@ -269,6 +271,7 @@ footer li {
 	line-height: 150%;
 	padding-top: .5rem;
 	padding-bottom: .5rem;
+    position: relative;
 }
 
 footer a {
@@ -303,6 +306,8 @@ footer i {
 	.hero_content {
 		line-height: 100%;
 	}
+    
+     
 }
 /*width*/
 @media only screen and (min-width: 800px){

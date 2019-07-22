@@ -16,12 +16,9 @@ video.playbackRate = 0.5; //changes the rate the video plays
 
 
         //------scroll animations-------
-let boxes = document.querySelectorAll('.flex_item');
-
-
 window.addEventListener('scroll', () => {
         
-        //  contact us services animation below
+        
     animate_contact_services_area_h3();
     animate_contact_services_area_p();
     animate_contact_services_area_contact();
@@ -29,7 +26,9 @@ window.addEventListener('scroll', () => {
     animate_who_we_are_h3();
     animate_who_we_are_p();
     animate_who_we_are_questions();
-    
+    animate_footer_h3();
+    animate_footer_li();
+    animate_footer_button();
     
     
 
@@ -159,6 +158,7 @@ function animate_repair(){
     
 }
 
+        //who we are
 function animate_who_we_are_h3(){
     
     let who_header = document.getElementById("who_header");
@@ -258,6 +258,153 @@ function animate_who_we_are_questions(){
 	}
     
 }
+
+        //footer
+function animate_footer_h3(){
+    
+    let header = document.getElementById("header_three");
+    let header_two = document.getElementById("header_three2");
+    let header_position = header.getBoundingClientRect().top;
+    let screen_position = window.innerHeight;
+    
+    
+    if(header_position < screen_position){
+    
+        header.classList.add("fade_in");
+        header_two.classList.add("fade_in");
+       
+    }
+    
+     /*in viewport scrolling up and not out of viewport*/
+	if(header_position > 0 && header_position < screen_position){
+		
+        header.classList.add("fade_in");
+        header_two.classList.add("fade_in");
+	}
+	/*if scrolled passed remove class*/
+    if(header_position < 0){
+	
+        header.classList.remove("fade_in");
+        header_two.classList.remove("fade_in"); 
+    }
+    /*if scrolled about remove class*/
+	if(header_position > screen_position){
+		
+        header.classList.remove("fade_in");
+        header_two.classList.remove("fade_in");
+	}
+    
+}
+
+
+function animate_footer_li(){
+    
+    let odd = document.getElementById("odd");
+    let even = document.getElementById("even");
+    let odd2 = document.getElementById("odd2");
+    let even2 = document.getElementById("even2");
+    let odd3 = document.getElementById("odd3");
+    let ul_position = odd.getBoundingClientRect().top;
+    let screen_position = window.innerHeight;
+    
+    
+    
+    if(ul_position < screen_position){
+    
+        odd.classList.add("slide_in_left");
+        even.classList.add("slide_in_right");
+        odd2.classList.add("slide_in_left");
+        even2.classList.add("slide_in_right");
+        odd3.classList.add("slide_in_left");
+       
+    }
+    
+    
+    /*in viewport scrolling up and not out of viewport*/
+	if(ul_position > 0 && ul_position < screen_position){
+		
+        odd.classList.add("slide_in_left");
+        even.classList.add("slide_in_right");
+        odd2.classList.add("slide_in_left");
+        even2.classList.add("slide_in_right");
+        odd3.classList.add("slide_in_left");
+	}
+	/*if scrolled passed remove class*/
+    if(ul_position < 0){
+	
+        odd.classList.remove("slide_in_left");
+        even.classList.remove("slide_in_right");
+        odd2.classList.remove("slide_in_left");
+        even2.classList.remove("slide_in_right");
+        odd3.classList.remove("slide_in_left"); 
+    }
+    /*if scrolled about remove class*/
+	if(ul_position > screen_position){
+		
+        odd.classList.remove("slide_in_left");
+        even.classList.remove("slide_in_right");
+        odd2.classList.remove("slide_in_left");
+        even2.classList.remove("slide_in_right");
+        odd3.classList.remove("slide_in_left");
+	}
+    
+    
+}
+
+
+function animate_footer_button(){
+    
+    let footer_btn = document.getElementById("footer_btn");
+    let btn_position = footer_btn.getBoundingClientRect().top;
+    let screen_position = window.innerHeight;
+    
+    
+    if(btn_position < screen_position){
+       
+        footer_btn.classList.add("fade_in");
+        
+    }
+    
+    /*in viewport scrolling up and not out of viewport*/
+	if(btn_position > 0 && btn_position < screen_position){
+		
+        footer_btn.classList.add("fade_in");
+        
+	}
+	/*if scrolled passed remove class*/
+    if(btn_position < 0){
+	
+        footer_btn.classList.remove("fade_in");;
+        
+    }
+    /*if scrolled about remove class*/
+	if(btn_position > screen_position){
+		
+        footer_btn.classList.remove("fade_in");
+        
+	}
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
