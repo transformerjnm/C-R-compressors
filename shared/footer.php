@@ -27,6 +27,9 @@
 	</section>
 	<span>Copyright &copy; C&amp;R Compressors 2019</span>
 </footer>
+<script src="js/animate.js">
+    //links to animation javascript file
+</script>
 </body>
 
 </html>

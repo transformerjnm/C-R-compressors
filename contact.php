@@ -1,22 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<!-- set browser color to them color. only supported in sertain mobile devices as of 5/13/19-->
-	<meta name="theme-color" content="color">
-	<link rel="stylesheet preload" type="text/css" href="css/styles.css">
-
-	<!-- ADD DESCRIPTION SEO OPT JASON LD---->
-	<meta name="description" content="" />
-	<link rel="icon" href="link">
-	<title>R&amp;C Compressors</title>
-</head>
-
-<body>
-	<?php include("shared/header.php")?>
+	<?php require("shared/header.php")?>
 	<div class="contact_hero_section"></div>
 	<div class="blank_space wide_skinny"></div>
 	<div class="blank_space"></div>
@@ -48,17 +30,21 @@
 		}
 	?>
 	<section class="contact_call">
-		<h1>Contact us <?php echo $service_msg; ?></h1>
+		<h1>Contact us
+			<?php echo $service_msg; ?>
+		</h1>
 		<div class="contact_align">
 			<ul>
-				<li><a href="mailto:asdasdasdasdasd">Email:  adsasdasdasdasd</a></li>
+				<li><a href="mailto:asdasdasdasdasd">Email: adsasdasdasdasd</a></li>
 				<br>
 				<li><a href="tel:1231231234">Phone: 123-123-1234</a></li>
 			</ul>
 		</div>
 	</section>
 	<section class="contact_form">
-		<h1>Contact us <?php echo $service_msg; ?></h1>
+		<h1>Contact us
+			<?php echo $service_msg; ?>
+		</h1>
 		<form action="contact.php" method="post">
 			<h3>What Service do you need?</h3>
 			<div class="contact_align">
@@ -101,13 +87,7 @@
 			</div>
 		</form>
 	</section>
-
-
-	<?php include("shared/footer.php")?>
-</body>
-
-</html>
-<?php
+	<?php
 	/*Subject of email based upon the services they chose*/
 	$subject="R&C Request For ";
 	if(isset($_POST['submit'])){	
@@ -123,5 +103,6 @@
 
 	$to = "somebody@example.com";
 
-mail($to,$subject,$msg);
-?>
+	/*mail($to,$subject,$msg);*/
+	?>
+	<?php include("shared/footer.php")?>

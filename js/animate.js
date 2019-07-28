@@ -1,16 +1,18 @@
         //---------title animation----------
 window.addEventListener('load', function(){
-        var title = document.getElementById("title");
-        
-        title.classList.add("fade_in"); //title animation
-      
-        
+	if(document.getElementById("title")){
+      var title = document.getElementById("title");
+      title.classList.add("fade_in"); //title animation   
+	}
     });
 
 // ------ add playback time to smoke video ------
-let video = document.getElementById("video");
+if(document.getElementById("video")){
+	let video = document.getElementById("video");
+	video.playbackRate = 0.5; //changes the rate the video plays
+}
 
-video.playbackRate = 0.5; //changes the rate the video plays
+
 
 
 
@@ -385,12 +387,15 @@ function animate_footer_button(){
 	}
     
 }
-
-
-
-
-
-
+/*moile navigation*/
+let mobile_nav_logo = document.querySelector('.mobile_nav_logo');
+let mobile_nav = document.querySelector('.mobile_nav');
+mobile_nav_logo.addEventListener('click', 
+				function(){
+					mobile_nav.classList.toggle('mobile_nav_active');	
+					mobile_nav_logo.classList.toggle('mobile_logo_active');
+				}
+);
 
 
 
