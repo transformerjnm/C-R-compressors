@@ -388,28 +388,23 @@ function animate_footer_button(){
     
 }
 /*moile navigation*/
+let nav_active = false;
 let mobile_nav_logo = document.querySelector('.mobile_nav_logo');
 let mobile_nav = document.querySelector('.mobile_nav');
+/*open and close mobile nav when mobile nav logo is clicked*/
 mobile_nav_logo.addEventListener('click', 
-				function(){
+				function(){			
 					mobile_nav.classList.toggle('mobile_nav_active');	
 					mobile_nav_logo.classList.toggle('mobile_logo_active');
+					nav_active = !nav_active;
 				}
 );
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//if  mobile nav is open and clicked outside of nav. close  mobile nav
+let main = document.querySelector('main');
+if(nav_active = true){
+	main.addEventListener('click', function(){
+		mobile_nav.classList.remove('mobile_nav_active');	
+		mobile_nav_logo.classList.remove('mobile_logo_active');
+		nav_active = !nav_active;
+	})
+}

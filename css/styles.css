@@ -17,7 +17,7 @@ black
 
 html {
 	box-sizing: border-box;
-	font-size: 16px;
+	font-size: 14px;
 	overflow-x: hidden;
 }
 
@@ -138,9 +138,12 @@ nav ul {
 	width: 100%;
 	position: relative;
 	top: 25vh;
-	line-height: 200%;
+	line-height: 100%;
 }
-
+.hero_content a {
+		position: relative;
+		top: 25vh;
+	}
 .hero_content h1 {
 	padding: 0;
 	margin: 0;
@@ -230,14 +233,14 @@ section {
 
 /*contact page*/
 .blank_space {
-	height: 350px;
+	height: 375px;
 }
 
 .contact_call {
 	color: var(--text_color);
 	background-color: var(--accent_color);
 	position: absolute;
-	height: 10rem;
+	min-height: 10rem;
 	top: 10rem;
 	left: 10vw;
 	width: 80vw;
@@ -272,6 +275,7 @@ section {
 footer {
 	padding-top: 5vw;
 	color: black;
+	position: absolute;
 }
 
 footer ul {
@@ -305,30 +309,72 @@ footer i {
 	color: blue;
 	font-size: 3rem;
 }
-
-/*media query for dektop*/
 /*height for y axis spacing adjustment*/
 @media only screen and (min-height: 300px) {
 	.hero_content a {
-		position: relative;
-		top: 50vh;
+		top: 45vh;
 	}
-
+	.hero_content h1 {
+		font-size: 1.75rem;
+	}
 	.hero_content {
-		line-height: 100%;
+		line-height: 200%;
 	}
 
 	.mobile_nav li {
 		margin: .5rem;
 	}
 }
+/*tablets and phablets*/
+@media only screen and (min-width: 550px) {
+	html {
+		font-size: 18px;
+	}
+	.hero_content h1 {
+		font-size: 1.75rem;
+	}
+	.grd_col_2 {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		padding: 1rem;
+	}
 
-/*width*/
+	.grd_item_1 {
+		grid-column-start: 1;
+		grid-column-end: 1;
+	}
+
+	.grd_item_1 h3 {
+		position: relative;
+	}
+
+	.grd_item_1 p {
+		position: relative;
+	}
+
+	.grd_item_2 {
+		grid-column-start: 2;
+		grid-column-end: 2;
+		padding-left: 2rem;
+		position: relative;
+	}
+
+	grd_item_3 {
+		grid-column-start: 1;
+		grid-column-end: 2;
+	}
+}
+/*width desktop*/
 @media only screen and (min-width: 800px) {
 	html {
 		font-size: 20px;
 	}
-
+	.hero_content a {
+		top: 50vh;
+	}
+	.hero_content h1{
+		font-size: 2rem;
+	}
 	.flex_item {
 		overflow: hidden;
 		height: 20vh;
@@ -361,40 +407,3 @@ footer i {
 	}
 }
 
-/*tablets and phablets*/
-@media only screen and (min-width: 550px) {
-	html {
-		font-size: 18px;
-	}
-
-	.grd_col_2 {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		padding: 1rem;
-	}
-
-	.grd_item_1 {
-		grid-column-start: 1;
-		grid-column-end: 1;
-	}
-
-	.grd_item_1 h3 {
-		position: relative;
-	}
-
-	.grd_item_1 p {
-		position: relative;
-	}
-
-	.grd_item_2 {
-		grid-column-start: 2;
-		grid-column-end: 2;
-		padding-left: 2rem;
-		position: relative;
-	}
-
-	grd_item_3 {
-		grid-column-start: 1;
-		grid-column-end: 2;
-	}
-}

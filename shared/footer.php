@@ -1,3 +1,4 @@
+</main>
 <footer>
 	<section>
 		<div class="grd_col_2">
