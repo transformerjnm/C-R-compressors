@@ -10,7 +10,7 @@
 	}
 		switch($service){
 			case "eva":
-				$service_msg = "for a FREE evaluation!";
+				$service_msg = "for a FREE Evaluation!";
 				break;
 				
 			case "area":
@@ -18,11 +18,11 @@
 				break;
 				
 			case "repair":
-				$service_msg = "for compressor repair.";
+				$service_msg = "for compressor repairs.";
 				break;
 				
 			case "question":
-				$service_msg = "for awnsers to your question!";
+				$service_msg = "for answers to all your questions!";
 				break;
 				
 			default:
@@ -46,7 +46,12 @@
 			<?php echo $service_msg; ?>
 		</h1>
 		<form action="contact.php" method="post">
-			<h3>What Service do you need?</h3>
+		<h5>Required field marked with *</h5>
+			<h3>
+				*What Services do you need?<br>
+				<?php if( !empty( $error_service ) ){ echo $error_service; } ?>
+			</h3>
+			
 			<div class="contact_align">
 				<input type="checkbox" id="Evaluation" name="check_list[] " value="Evaluation">
 				<label for="Evaluation">Evaluation</label>
@@ -73,14 +78,19 @@
 				<label for="Q&A">Questions and Contact</label>
 				<br>
 				<br>
-				<label for="Name">Name: </label>
-				<input type="text" name="Name" id="Name">
+				<label for="Name">*Name: </label>
+				<input type="text" name="Name" id="Name" required>
 				<br><br>
-				<label for="Email">Email: </label>
-				<input type="Email" name="Email" id="Email">
+				<label for="Email">*Email: </label>
+				<input type="Email" name="Email" id="Email" required>
 				<br><br>
-				<label for="Phone">Phone: </label>
-				<input type="tel" name="Phone" id="Phone">
+				<label for="Phone">*Phone: </label>
+				<input type="tel" name="Phone" id="Phone" required>
+				<br><br>
+				<label for="msg">Enter additional information here!</label>
+				<br><br>
+				<textarea name="msg" id="msg" rows="5">
+				</textarea>
 				<br><br>
 				<input type="submit" name="submit" value="Contact Us">
 				<br><br>
@@ -90,19 +100,28 @@
 	<?php
 	/*Subject of email based upon the services they chose*/
 	$subject="R&C Request For ";
-	if(isset($_POST['submit'])){	
-		if(!empty($_POST['check_list'])){
-			foreach($_POST['check_list'] as $service){
+	if( isset( $_POST['submit'] ) ){	
+		if( !empty( $_POST['check_list'] ) ){
+			foreach( $_POST['check_list'] as $service ){
 				$subject = $subject . ", " . $service;		
 			}	
-			unset($_POST['submit']);
-			unset($_POST['check_list']);
+			unset( $_POST['submit'] );
+			unset( $_POST['check_list'] );
 			$subject = "";
-		}
+			/*compose mail*/
+			$to = "somebody@example.com";
+  		$msg = "Name: " . $_POST['Name'] . "\n\r".
+				"Email: " . $_POST['Email'] . "\n\r".
+				"Phone: " . $_POST['Phone'] . "\n\r".
+				"\n\r".
+				$_POST['msg'];
+			mail( $to, $subject, $msg );
+		}else{
+			/*Service not selected*/
+			$error_service = "Please choose a service!";
+		}		
 	}
 
-	$to = "somebody@example.com";
 
-	/*mail($to,$subject,$msg);*/
 	?>
 	<?php include("shared/footer.php")?>
