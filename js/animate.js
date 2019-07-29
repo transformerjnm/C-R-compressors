@@ -1,5 +1,12 @@
-        //---------title animation----------
+window.addEventListener('beforeunload', function(){
+	console.log("unload");
+});  
+//on load 
 window.addEventListener('load', function(){
+	/*page transition*/
+	let body = document.querySelector('body');
+	body.classList.add('page_transition');
+	//---------title animation----------
 	if(document.getElementById("title")){
       var title = document.getElementById("title");
       title.classList.add("fade_in"); //title animation   
@@ -11,11 +18,6 @@ if(document.getElementById("video")){
 	let video = document.getElementById("video");
 	video.playbackRate = 0.5; //changes the rate the video plays
 }
-
-
-
-
-
 
         //------scroll animations-------
 window.addEventListener('scroll', () => {
