@@ -17,7 +17,7 @@
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio praesentium perferendis quae, natus officia sapiente maiores, quas sequi voluptatum ipsa, voluptatem corporis! Corporis asperiores iure, quas in officiis nemo culpa?</p>
 		</div>
 		<div class="flex_item">
-			<h4>Preventive Maintnace</h4>
+			<h4>preventive maintenance</h4>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea cupiditate molestias delectus, nulla labore ex dolores tempore veritatis. Beatae eos expedita sit fugiat fugit inventore illo sunt explicabo, aut iste.</p>
 		</div>
 		<div class="flex_item">
@@ -55,7 +55,7 @@
 			<span><a href="contact.php?service=repair" class="contact_button">I Need Repairs</a></span>
 		</div>
 		<div class="grd_item_2" id="emergancy">
-			<h3>24/7 Emergancy Repair</h3>
+			<h3>24/7 Emergency Repair</h3>
 		</div>
 	</div>
 </section>

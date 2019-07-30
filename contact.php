@@ -57,7 +57,7 @@
 				<label for="Evaluation">Evaluation</label>
 				<br><br>
 				<input type="checkbox" id="Preventive Maintance" name="check_list[]" value="Preventive Maintance">
-				<label for="Preventive Maintance">Preventive Maintance</label>
+				<label for="Preventive Maintance">preventive maintenance</label>
 				<br><br>
 				<input type="checkbox" id="Installs" name="check_list[]" value="Installs">
 				<label for="Installs">Installs</label>
