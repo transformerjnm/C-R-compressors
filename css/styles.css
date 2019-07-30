@@ -10,9 +10,9 @@ black
 	--text_color: #f0f0f0;
 	--accent_color: #003478;
 	--accent_color_rgba: rgba(0, 52, 120, .75);
-	--accent_gradient: rgba(0, 52, 120, .85);
+	--accent_gradient: rgba(0, 52, 120, .5);
 	--alert_color: #b50006;
-	--alert_gradient: rgba(359, 0, 3, .25);
+	--alert_gradient: rgba(359, 0, 3, .5);
 }
 
 html {
@@ -197,9 +197,10 @@ section {
 	margin-bottom: 2rem;
 	color: var(--text_color);
 	border-radius: 5px 15px 5px 15px;
+    box-shadow: black 0px 0px 5px;
 	text-align: center;
-	background-color: var(--text_color);
-	background-image: linear-gradient(to bottom right, var(--accent_gradient), var(--accent_gradient));
+	background-color: var(--accent_color);
+	background-image: linear-gradient(to bottom right, var(--alert_gradient), var(--accent_gradient));
 }
 
 /*--------page sections specifics-------*/
