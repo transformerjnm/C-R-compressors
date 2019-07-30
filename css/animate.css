@@ -21,6 +21,7 @@
 	animation-iteration-count: 1;
 	animation-timing-function: ease-in;
 	animation-duration: .75s;
+    animation-delay: .5s;
 }
 
 video {
@@ -70,7 +71,7 @@ video {
 
 }
 
-.slide_in_right {
+.slide_in_right{
 	animation-name: slide_in_from_right;
 	animation-duration: 1s;
 	animation-fill-mode: forwards;
