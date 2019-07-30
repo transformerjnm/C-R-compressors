@@ -1,6 +1,5 @@
 </main>
 <footer>
-	<section>
 		<div class="grd_col_2">
 			<div class="grd_item_1">
 				<h3 id="header_three">Sitemap</h3>
@@ -13,9 +12,8 @@
 				</ul>
 			</div>
 			<div class="grd_item_2">
-
 				<h3 id="header_three2">Contact Us</h3>
-				<ul id="">
+				<ul>
 					<li><a href="mailto:asdasdasdasdasd">Email: adsasdasdasdasd</a></li>
 					<li><a href="tel:1231231234">Phone: 123-123-1234</a></li>
 					<li><a href="contact.php" class="contact_button" id="footer_btn">Contact</a></li>
@@ -25,7 +23,6 @@
 				</ul>
 			</div>
 		</div>
-	</section>
 	<span>Copyright &copy; C&amp;R Compressors 2019</span>
 </footer>
 <script src="js/animate.js">
