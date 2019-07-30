@@ -361,6 +361,14 @@ footer i {
 		padding-left: 2rem;
 		position: relative;
 	}
+    
+    .grd_item_2 h3{
+        position: relative;
+    }
+    
+    .grd_item_2 #footer_btn{
+        position: relative;
+    }
 
 	grd_item_3 {
 		grid-column-start: 1;
