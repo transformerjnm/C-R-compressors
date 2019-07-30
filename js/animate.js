@@ -144,7 +144,7 @@ function animate_contact_services_area_contact() {
 //i need repair and 24/7 repair
 function animate_repair() {
 
-    if (document.getElementById("i_need_repair" && document.getElementById("emergency"))) {
+    if (document.getElementById("i_need_repair") && document.getElementById("emergancy")) {
 
         let repair = document.getElementById("i_need_repair"); //selects title and button
         let repair_emergancy = document.getElementById("emergancy");
