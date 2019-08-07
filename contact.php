@@ -30,72 +30,71 @@
 		}
 	?>
 	<section class="contact_call">
-		<h1>Contact us
-			<?php echo $service_msg; ?>
-		</h1>
-		<div class="contact_align">
-			<ul>
-				<li><a href="mailto:asdasdasdasdasd">Email: adsasdasdasdasd</a></li>
-				<br>
-				<li><a href="tel:1231231234">Phone: 123-123-1234</a></li>
-			</ul>
-		</div>
+	    <h1>Contact us
+	        <?php echo $service_msg; ?>
+	    </h1>
+	    <div class="contact_align">
+	        <ul>
+	            <li><a href="mailto:asdasdasdasdasd">Email: adsasdasdasdasd</a></li>
+	            <br>
+	            <li><a href="tel:1231231234">Phone: 123-123-1234</a></li>
+	        </ul>
+	    </div>
 	</section>
 	<section class="contact_form">
-		<h1>Contact us
-			<?php echo $service_msg; ?>
-		</h1>
-		<form action="contact.php" method="post">
-		<h5>Required field marked with *</h5>
-			<h3>
-				*What Services do you need?<br>
-				<?php if( !empty( $error_service ) ){ echo $error_service; } ?>
-			</h3>
-			
-			<div class="contact_align">
-				<input type="checkbox" id="Evaluation" name="check_list[] " value="Evaluation">
-				<label for="Evaluation">Evaluation</label>
-				<br><br>
-				<input type="checkbox" id="Preventive Maintance" name="check_list[]" value="Preventive Maintance">
-				<label for="Preventive Maintance">preventive maintenance</label>
-				<br><br>
-				<input type="checkbox" id="Installs" name="check_list[]" value="Installs">
-				<label for="Installs">Installs</label>
-				<br><br>
-				<input type="checkbox" id="Rebuild" name="check_list[]" value="Rebuild">
-				<label for="Rebuild">Rebuild</label>
-				<br><br>
-				<input type="checkbox" id="Parts" name="check_list[]" value="Parts">
-				<label for="Parts">Parts</label>
-				<br><br>
-				<input type="checkbox" id="Service Area" name="check_list[]" value="Service Area">
-				<label for="Service Area">Service Area</label>
-				<br><br>
-				<input type="checkbox" id="Repair" name="check_list[]" value="Repair">
-				<label for="Evaluation">Repair</label>
-				<br><br>
-				<input type="checkbox" id="Q&A" name="check_list[]" value="Q&A">
-				<label for="Q&A">Questions and Contact</label>
-				<br>
-				<br>
-				<label for="Name">*Name: </label>
-				<input type="text" name="Name" id="Name" required>
-				<br><br>
-				<label for="Email">*Email: </label>
-				<input type="Email" name="Email" id="Email" required>
-				<br><br>
-				<label for="Phone">*Phone: </label>
-				<input type="tel" name="Phone" id="Phone" required>
-				<br><br>
-				<label for="msg">Enter additional information here!</label>
-				<br><br>
-				<textarea name="msg" id="msg" rows="5">
-				</textarea>
-				<br><br>
-				<input type="submit" name="submit" value="Contact Us">
-				<br><br>
-			</div>
-		</form>
+	    <h1>Contact us
+	        <?php echo $service_msg; ?>
+	    </h1>
+	    <form action="contact.php" method="post">
+	        <h5>Required field marked with *</h5>
+	        <h3>
+	            *What Services do you need?<br>
+	            <?php if( !empty( $error_service ) ){ echo $error_service; } ?>
+	        </h3>
+
+	        <div class="contact_align">
+	            <input type="checkbox" id="Evaluation" name="check_list[] " value="Evaluation">
+	            <label for="Evaluation">Evaluation</label>
+	            <br><br>
+	            <input type="checkbox" id="Preventive Maintance" name="check_list[]" value="Preventive Maintance">
+	            <label for="Preventive Maintance">preventive maintenance</label>
+	            <br><br>
+	            <input type="checkbox" id="Installs" name="check_list[]" value="Installs">
+	            <label for="Installs">Installs</label>
+	            <br><br>
+	            <input type="checkbox" id="Rebuild" name="check_list[]" value="Rebuild">
+	            <label for="Rebuild">Rebuild</label>
+	            <br><br>
+	            <input type="checkbox" id="Parts" name="check_list[]" value="Parts">
+	            <label for="Parts">Parts</label>
+	            <br><br>
+	            <input type="checkbox" id="Service Area" name="check_list[]" value="Service Area">
+	            <label for="Service Area">Service Area</label>
+	            <br><br>
+	            <input type="checkbox" id="Repair" name="check_list[]" value="Repair">
+	            <label for="Evaluation">Repair</label>
+	            <br><br>
+	            <input type="checkbox" id="Q&A" name="check_list[]" value="Q&A">
+	            <label for="Q&A">Questions and Contact</label>
+	            <br>
+	            <br>
+	            <label for="Name">*Name: </label>
+	            <input type="text" name="Name" id="Name" required>
+	            <br><br>
+	            <label for="Email">*Email: </label>
+	            <input type="Email" name="Email" id="Email" required>
+	            <br><br>
+	            <label for="Phone">*Phone: </label>
+	            <input type="tel" name="Phone" id="Phone" required>
+	            <br><br>
+	            <label for="msg">Enter additional information here!</label>
+	            <br><br>
+	            <input type="text" name ="msg" id="msg">
+	            <br><br>
+	            <input type="submit" name="submit" value="Contact Us">
+	            <br><br>
+	        </div>
+	    </form>
 	</section>
 	<?php
 	/*Subject of email based upon the services they chose*/
@@ -109,13 +108,19 @@
 			unset( $_POST['check_list'] );
 			$subject = "";
 			/*compose mail*/
-			$to = "somebody@example.com";
+            /*$to is mail server proviveded by mail hosting*/
+			$to = "test@jnmtest.x10host.com";
   		$msg = "Name: " . $_POST['Name'] . "\n\r".
 				"Email: " . $_POST['Email'] . "\n\r".
 				"Phone: " . $_POST['Phone'] . "\n\r".
 				"\n\r".
 				$_POST['msg'];
+            
+         ini_set('SMTP','xo7.x10hosting.com');
+            ini_set('smtp_port',465);    
+            
 			mail( $to, $subject, $msg );
+            echo "sent mail";
 		}else{
 			/*Service not selected*/
 			$error_service = "Please choose a service!";
