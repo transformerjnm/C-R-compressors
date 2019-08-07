@@ -150,6 +150,21 @@ nav ul {
 	margin: 0;
 }
 
+/*grid items*/
+
+.grd_item_1 h3 {
+		position: relative;
+	}
+
+.grd_item_1 p {
+		position: relative;
+	}
+
+.grd_item_2{
+    position: relative;
+}
+
+
 /*-----sections styles-----*/
 section {
 	padding-left: 1rem;
@@ -201,19 +216,6 @@ section {
 	text-align: center;
 	background-color: var(--accent_color);
 	background-image: linear-gradient(to bottom right, var(--alert_gradient), var(--accent_gradient));
-}
-
-/*grid items*/
-.grd_item_1 h3 {
-		position: relative;
-	}
-
-.grd_item_1 p {
-		position: relative;
-	}
-
-.grd_item_2 {
-    position: relative;
 }
 
 /*--------page sections specifics-------*/
@@ -289,6 +291,7 @@ textarea {
 /*-----footer-----*/
 footer {
 	padding: 5vw 1rem 0 1rem;
+    
 	color: black;
 	position: absolute;
 	width: 100%;
