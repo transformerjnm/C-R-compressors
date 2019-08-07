@@ -203,6 +203,19 @@ section {
 	background-image: linear-gradient(to bottom right, var(--alert_gradient), var(--accent_gradient));
 }
 
+/*grid items*/
+.grd_item_1 h3 {
+		position: relative;
+	}
+
+.grd_item_1 p {
+		position: relative;
+	}
+
+.grd_item_2 {
+    position: relative;
+}
+
 /*--------page sections specifics-------*/
 /*home page*/
 .about {
@@ -276,10 +289,13 @@ textarea {
 /*-----footer-----*/
 footer {
 	padding: 5vw 1rem 0 1rem;
-    
 	color: black;
 	position: absolute;
 	width: 100%;
+}
+
+#footer_btn{
+    position: relative;
 }
 
 footer ul {
