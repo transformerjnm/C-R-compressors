@@ -275,7 +275,8 @@ textarea {
 
 /*-----footer-----*/
 footer {
-	padding-top: 5vw;
+	padding: 5vw 1rem 0 1rem;
+    
 	color: black;
 	position: absolute;
 	width: 100%;
