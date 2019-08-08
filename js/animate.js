@@ -1,6 +1,3 @@
-window.addEventListener('beforeunload', function () {
-    console.log("unload");
-});
 //on load 
 window.addEventListener('load', function () {
     /*page transition*/
@@ -68,7 +65,7 @@ function check_element_position(element, element_position, animation) {
 }
 
 function check_2element_position(element1, element2, element_position, animation1, animation2) {
-    
+
     let screen_position = window.innerHeight; //gets the height of the window
 
     if (element_position < screen_position) {
@@ -78,17 +75,17 @@ function check_2element_position(element1, element2, element_position, animation
     }
 
 
-        /*in viewport scrolling up and not out of viewport*/
+    /*in viewport scrolling up and not out of viewport*/
     if (element_position > 0 && element_position < screen_position) {
         element1.classList.add(animation1);
         element2.classList.add(animation2);
     }
-        /*if scrolled passed remove class*/
+    /*if scrolled passed remove class*/
     if (element_position < 0) {
         element1.classList.remove(animation1);
         element2.classList.remove(animation2);
     }
-        /*if scrolled about remove class*/
+    /*if scrolled about remove class*/
     if (element_position > screen_position) {
         element1.classList.remove(animation1);
         element2.classList.remove(animation2);
@@ -96,10 +93,10 @@ function check_2element_position(element1, element2, element_position, animation
 
 }
 
-function check_multiple_elements(odd, even, odd2, even2, odd3, element_position, animation1, animation2){
-    
+function check_multiple_elements(odd, even, odd2, even2, odd3, element_position, animation1, animation2) {
+
     let screen_position = window.innerHeight;
-    
+
 
 
     if (element_position < screen_position) {
@@ -141,7 +138,7 @@ function check_multiple_elements(odd, even, odd2, even2, odd3, element_position,
         odd3.classList.remove(animation1);
     }
 
-    
+
 }
 
 //services area h3
@@ -201,7 +198,7 @@ function animate_repair() {
         let repair = document.getElementById("i_need_repair"); //selects title and button
         let repair_emergancy = document.getElementById("emergancy");
         let repair_position = repair.getBoundingClientRect().top; //top position of repair
-        
+
 
 
         check_2element_position(repair, repair_emergancy, repair_position, "fade_in", "pop_in");
@@ -217,7 +214,7 @@ function animate_who_we_are_h3() {
 
         let who_header = document.getElementById("who_header");
         let who_header_position = who_header.getBoundingClientRect().top;
-        
+
         check_element_position(who_header, who_header_position, "slide_in_right");
 
     }
@@ -231,7 +228,7 @@ function animate_who_we_are_p() {
 
         let who_p = document.getElementById("who_p");
         let who_p_position = who_p.getBoundingClientRect().top;
-        
+
         check_element_position(who_p, who_p_position, "slide_in_left");
 
     }
@@ -244,7 +241,7 @@ function animate_who_we_are_questions() {
 
         let questions = document.getElementById("questions");
         let questions_position = questions.getBoundingClientRect().top;
-        
+
         check_element_position(questions, questions_position, "fade_in");
 
     }
@@ -259,7 +256,7 @@ function animate_footer_h3() {
         let header = document.getElementById("header_three");
         let header_two = document.getElementById("header_three2");
         let header_position = header.getBoundingClientRect().top;
-        
+
         check_2element_position(header, header_two, header_position, "slide_in_left", "slide_in_right");
 
     }
@@ -275,18 +272,17 @@ function animate_footer_li() {
     let even2 = document.getElementById("even2");
     let odd3 = document.getElementById("odd3");
     let ul_position = odd.getBoundingClientRect().top;
-    
+
     check_multiple_elements(odd, even, odd2, even2, odd3, ul_position, "slide_in_left", "slide_in_right");
-    
+
 
 }
-
 
 function animate_footer_button() {
 
     let footer_btn = document.getElementById("footer_btn");
     let btn_position = footer_btn.getBoundingClientRect().top;
-    
+
     check_element_position(footer_btn, btn_position, "slide_in_left");
 
 }
@@ -303,12 +299,15 @@ mobile_nav_logo.addEventListener('click',
         nav_active = !nav_active;
     }
 );
+
 //if  mobile nav is open and clicked outside of nav. close  mobile nav
 let main = document.querySelector('main');
 if (nav_active = true) {
-    main.addEventListener('click', function () {
-        mobile_nav.classList.remove('mobile_nav_active');
-        mobile_nav_logo.classList.remove('mobile_logo_active');
-        nav_active = !nav_active;
-    })
+    main.addEventListener('click', 
+        function () {
+            mobile_nav.classList.remove('mobile_nav_active');
+            mobile_nav_logo.classList.remove('mobile_logo_active');
+            nav_active = !nav_active;
+        }
+    );
 }
