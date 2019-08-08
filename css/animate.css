@@ -70,12 +70,28 @@ video {
 @keyframes slide_in_from_right {
 
 	from {
+<<<<<<< Updated upstream
 		left: 700px;
+=======
+		transform: translateX(500px);
+		-webkit-transform: translateX(500px);
+		-moz-transform: translateX(500px);
+		-ms-transform: translateX(500px);
+		-o-transform: translateX(500px);
+>>>>>>> Stashed changes
 		opacity: 0.2;
 	}
 
 	to {
+<<<<<<< Updated upstream
 		left: 0;
+=======
+		transform: translateX(0px);
+		-webkit-transform: translateX(0px);
+		-moz-transform: translateX(0px);
+		-o-transform: translateX(0px);
+		-ms-transform: translateX(0px);
+>>>>>>> Stashed changes
 		opacity: 1;
 	}
 
@@ -91,12 +107,28 @@ video {
 @keyframes slide_in_from_left {
 
 	from {
+<<<<<<< Updated upstream
 		left: -700px;
+=======
+		transform: translateX(-500px);
+		-webkit-transform: translateX(-500px);
+		-moz-transform: translateX(-500px);
+		-o-transform: translateX(-500px);
+		-ms-transform: translateX(-500px);
+>>>>>>> Stashed changes
 		opacity: 0.2;
 	}
 
 	to {
+<<<<<<< Updated upstream
 		left: 0;
+=======
+		transform: translateX(0px);
+		-webkit-transform: translateX(0px);
+		-moz-transform: translateX(0px);
+		-o-transform: translateX(0px);
+		-ms-transform: translateX(0px);
+>>>>>>> Stashed changes
 		opacity: 1;
 	}
 
