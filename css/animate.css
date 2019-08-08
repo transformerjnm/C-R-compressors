@@ -70,12 +70,12 @@ video {
 @keyframes slide_in_from_right {
 
 	from {
-		left: 700px;
+		transform: translateX(500px);
 		opacity: 0.2;
 	}
 
 	to {
-		left: 0;
+		transform: translateX(0px);
 		opacity: 1;
 	}
 
@@ -91,12 +91,12 @@ video {
 @keyframes slide_in_from_left {
 
 	from {
-		left: -700px;
+		transform: translateX(-500px);
 		opacity: 0.2;
 	}
 
 	to {
-		left: 0;
+		transform: translateX(0px);
 		opacity: 1;
 	}
 

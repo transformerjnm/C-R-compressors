@@ -26,7 +26,7 @@
 				break;
 				
 			default:
-				$service_msg = "for all you compressor needs!";
+				$service_msg = "for all your compressor needs!";
 		}
 	?>
 	<section class="contact_call">
