@@ -17,7 +17,7 @@
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio praesentium perferendis quae, natus officia sapiente maiores, quas sequi voluptatum ipsa, voluptatem corporis! Corporis asperiores iure, quas in officiis nemo culpa?</p>
 		</div>
 		<div class="flex_item">
-			<h4>preventive maintenance</h4>
+			<h4>Preventive Maintenance</h4>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea cupiditate molestias delectus, nulla labore ex dolores tempore veritatis. Beatae eos expedita sit fugiat fugit inventore illo sunt explicabo, aut iste.</p>
 		</div>
 		<div class="flex_item">
