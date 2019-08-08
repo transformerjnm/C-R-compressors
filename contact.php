@@ -102,21 +102,20 @@
 	if( isset( $_POST['submit'] ) ){	
 		if( !empty( $_POST['check_list'] ) ){
 			foreach( $_POST['check_list'] as $service ){
-				$subject = $subject . ", " . $service;		
+				$subject = $subject . ", " . htmlspecialchars($service);		
 			}	
 			unset( $_POST['submit'] );
 			unset( $_POST['check_list'] );
-			$subject = "";
 			/*compose mail*/
             /*$to is mail server proviveded by mail hosting*/
 			$to = "test@jnmtest.x10host.com";
-  		$msg = "Name: " . $_POST['Name'] . "\n\r".
-				"Email: " . $_POST['Email'] . "\n\r".
-				"Phone: " . $_POST['Phone'] . "\n\r".
+  		    $msg = "Name: " . htmlspecialchars($_POST['Name']) . "\n\r".
+				"Email: " . htmlspecialchars($_POST['Email']) . "\n\r".
+				"Phone: " . htmlspecialchars($_POST['Phone']) . "\n\r".
 				"\n\r".
 				$_POST['msg'];
             
-         ini_set('SMTP','xo7.x10hosting.com');
+            ini_set('SMTP','xo7.x10hosting.com');
             ini_set('smtp_port',465);    
             
 			mail( $to, $subject, $msg );
@@ -126,7 +125,5 @@
 			$error_service = "Please choose a service!";
 		}		
 	}
-
-
 	?>
 	<?php include("shared/footer.php")?>
