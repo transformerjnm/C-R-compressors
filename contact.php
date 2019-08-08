@@ -14,7 +14,7 @@
 				break;
 				
 			case "area":
-				$service_msg = "to see if your in our service area.";
+				$service_msg = "to see if you are in our service area.";
 				break;
 				
 			case "repair":
@@ -26,7 +26,7 @@
 				break;
 				
 			default:
-				$service_msg = "for all you compressor needs!";
+				$service_msg = "for all your compressor needs!";
 		}
 	?>
 	<section class="contact_call">
@@ -57,7 +57,7 @@
 	            <label for="Evaluation">Evaluation</label>
 	            <br><br>
 	            <input type="checkbox" id="Preventive Maintance" name="check_list[]" value="Preventive Maintance">
-	            <label for="Preventive Maintance">preventive maintenance</label>
+	            <label for="Preventive Maintance">Preventive Maintenance</label>
 	            <br><br>
 	            <input type="checkbox" id="Installs" name="check_list[]" value="Installs">
 	            <label for="Installs">Installs</label>

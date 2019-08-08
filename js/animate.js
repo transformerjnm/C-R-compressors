@@ -1,6 +1,3 @@
-window.addEventListener('beforeunload', function () {
-    console.log("unload");
-});
 //on load 
 window.addEventListener('load', function () {
     /*page transition*/
@@ -287,7 +284,7 @@ function animate_footer_button() {
     let footer_btn = document.getElementById("footer_btn");
     let btn_position = footer_btn.getBoundingClientRect().top;
     
-    check_element_position(footer_btn, btn_position, "slide_in_left");
+    check_element_position(footer_btn, btn_position, "fade_in");
 
 }
 
