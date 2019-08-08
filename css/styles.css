@@ -187,27 +187,7 @@ section {
 }
 
 /*------custom display layout------*/
-/*grid items*/
 
-.grd_item_1 h3 {
-    position: relative;
-}
-
-.grd_item_1 p {
-    position: relative;
-}
-
-.grd_item_2 {
-    position: relative;
-}
-
-.grd_item_2 h3 {
-    position: relative;
-}
-
-.grd_item_2 #footer_btn {
-    position: relative;
-}
 
 /*flexbox*/
 .flexbox {
@@ -310,10 +290,6 @@ footer {
     width: 100%;
 }
 
-#footer_btn {
-    position: relative;
-}
-
 footer ul {
     list-style-type: none;
 }
@@ -322,7 +298,7 @@ footer li {
     line-height: 150%;
     padding-top: .5rem;
     padding-bottom: .5rem;
-    position: relative;
+    
 }
 
 footer a {
