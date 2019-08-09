@@ -46,12 +46,14 @@ video {
 @keyframes fade_in_opacity {
 	0% {
 		opacity: .25;
+		-webkit-transform: rotateY(90deg);
 		transform: rotateY(90deg);
 		filter: blur(10px);
 	}
 
 	100% {
 		opacity: 1;
+		-webkit-transform: rotateY(0deg);
 		transform: rotateY(0deg);
 		filter: blur(0);
 	}

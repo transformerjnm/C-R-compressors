@@ -17,10 +17,11 @@ if (document.getElementById("video")) {
 }
 
 //------scroll animations-------
-window.addEventListener('scroll', () => {
+window.addEventListener('scroll', throttle(anmiations, 100));
 
-
-    animate_contact_services_area_h3();
+//functions
+function anmiations(){
+	  animate_contact_services_area_h3();
     animate_contact_services_area_p();
     animate_contact_services_area_contact();
     animate_repair();
@@ -30,16 +31,7 @@ window.addEventListener('scroll', () => {
     animate_footer_h3();
     animate_footer_li();
     animate_footer_button();
-
-
-
-
-}); //end of scroll event
-
-
-
-//functions
-
+}
 //check element position
 function check_element_position(element, element_position, animation) {
 
@@ -310,4 +302,14 @@ if (nav_active = true) {
             nav_active = !nav_active;
         }
     );
+}
+//resuable function to throttle the number of times a fuction is called
+function throttle(fn, wait) {
+	var time = Date.now();
+	return function () {
+		if ((time + wait - Date.now()) < 0) {
+			fn();
+			time = Date.now();
+		}
+	}
 }
