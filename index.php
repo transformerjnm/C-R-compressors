@@ -5,7 +5,7 @@
     <source src="images/smoke.mp4" type="video/MP4">
 </video>
 	<div class="hero_content">
-		<h1 id="title">C&amp;R first time customer free evaluation!</h1>
+		<h1 id="title">C&amp;R first time customer get a free evaluation!</h1>
 		<span><a href="contact.php?service=eva" class="contact_button">Get Free Evaluation</a></span>
 	</div>
 </section>
