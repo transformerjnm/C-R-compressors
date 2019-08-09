@@ -35,8 +35,8 @@
 	    </h1>
 	    <div class="contact_align">
 	        <ul>
-	            <li><a href="mailto:asdasdasdasdasd">Email: adsasdasdasdasd</a></li>
-	            <br>
+	            <li><a href="mailto:asdasdasdasdasd">Email: adsasdasdasdasd</a><br><br></li>
+	           
 	            <li><a href="tel:1231231234">Phone: 123-123-1234</a></li>
 	        </ul>
 	    </div>
@@ -56,8 +56,8 @@
 	            <input type="checkbox" id="Evaluation" name="check_list[] " value="Evaluation">
 	            <label for="Evaluation">Evaluation</label>
 	            <br><br>
-	            <input type="checkbox" id="Preventive Maintance" name="check_list[]" value="Preventive Maintance">
-	            <label for="Preventive Maintance">preventive maintenance</label>
+	            <input type="checkbox" id="Preventive_Maintance" name="check_list[]" value="Preventive Maintance">
+	            <label for="Preventive_Maintance">preventive maintenance</label>
 	            <br><br>
 	            <input type="checkbox" id="Installs" name="check_list[]" value="Installs">
 	            <label for="Installs">Installs</label>
@@ -68,8 +68,8 @@
 	            <input type="checkbox" id="Parts" name="check_list[]" value="Parts">
 	            <label for="Parts">Parts</label>
 	            <br><br>
-	            <input type="checkbox" id="Service Area" name="check_list[]" value="Service Area">
-	            <label for="Service Area">Service Area</label>
+	            <input type="checkbox" id="Service_Area" name="check_list[]" value="Service Area">
+	            <label for="Service_Area">Service Area</label>
 	            <br><br>
 	            <input type="checkbox" id="Repair" name="check_list[]" value="Repair">
 	            <label for="Evaluation">Repair</label>
