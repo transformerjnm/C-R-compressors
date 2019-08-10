@@ -190,43 +190,23 @@ section {
     padding-bottom: 5vw;
     color: var(--text_color);
 }
-
-/*------custom display layout------*/
-
-
-/*flexbox*/
-.flexbox {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-}
-
-.flex_item {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    color: var(--text_color);
-    border-radius: 5px 15px 5px 15px;
-    box-shadow: black 0px 0px 5px;
-    text-align: center;
-    background-color: var(--accent_color);
-    background-image: linear-gradient(to bottom right, var(--alert_gradient), var(--accent_gradient));
-}
-
 /*--------page sections specifics-------*/
 /*home page*/
-.about {
-    min-height: 50vh;
+
+.services ul {
+	list-style: none;
+	padding: 0;
+	height: 100%;
+}
+.services li {
+	cursor: pointer;
+	padding: 1rem;
+	font-weight: bold;
 }
 
-.time {
-    min-height: 50vh;
-    background-size: cover;
-    background-position: center;
-    background-image: url(../mobile_images/welding_repair_mobile.jpg);
+.service_active{
+	border-bottom: 3px solid var(--alert_color);
 }
-
 .area {
     min-height: 50vh;
     background-size: cover;
@@ -235,6 +215,15 @@ section {
     border-bottom: 1px solid var(--accent_color_rgba);
 }
 
+.time {
+    min-height: 50vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../mobile_images/welding_repair_mobile.jpg);
+}
+.about {
+    min-height: 50vh;
+}
 .contact_button {
     color: var(--text_color);
     background-color: var(--alert_color);
@@ -356,7 +345,7 @@ footer i {
     .hero_content h1 {
         font-size: 1.75rem;
     }
-
+		/*------custom display layout------*/
     .grd_col_2 {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -413,13 +402,6 @@ footer i {
 
     .hero_content h1 {
         font-size: 2rem;
-    }
-
-    .flex_item {
-        overflow: hidden;
-        height: 20vh;
-        width: 15vw;
-        margin: 0;
     }
 
     nav ul {
