@@ -207,6 +207,9 @@ section {
 .service_active{
 	border-bottom: 3px solid var(--alert_color);
 }
+.services p {
+	margin: 3rem;
+}
 .area {
     min-height: 50vh;
     background-size: cover;

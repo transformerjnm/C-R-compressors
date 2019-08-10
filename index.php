@@ -22,7 +22,6 @@
 			</ul>
 		</div>
 		<div class="grd_item_2">
-			<h3 id="service_name"></h3>
 			<p id="service_description"></p>
 		</div>
 	</div>
