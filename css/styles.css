@@ -33,8 +33,10 @@ body {
     background-color: var(--text_color);
 }
 /*fixes animatios on mobile. due to meta tage device wisth = initail width mobile phone ignore oflow-x hidden on html and body tag*/
-main{
-	 overflow-x: hidden;
+main {
+    min-height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 a {
     padding: .5rem;
