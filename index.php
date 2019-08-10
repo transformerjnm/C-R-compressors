@@ -14,11 +14,11 @@
 	<div class="grd_col_2">
 		<div class="grd_item_1">
 			<ul>
-				<li id="services_evalution"><span class="services_option service_active">Evalution</span></li>
-				<li id="services_maintance" ><span class="services_option">Preventive Maintance</span></li>
-				<li id="services_installs"><span class="services_option">Installs</span></li>
-				<li id="services_rebuilds"><span  class="services_option">Rebuilds</span></li>
-				<li id="services_parts"><span  class="services_option">Parts</span></li>
+				<li><span id="services_evalution" class="services_option service_active">Evalution</span></li>
+				<li><span id="services_maintance" class="services_option">Preventive Maintance</span></li>
+				<li><span id="services_installs" class="services_option">Installs</span></li>
+				<li><span id="services_rebuilds"  class="services_option">Rebuilds</span></li>
+				<li><span id="services_parts"  class="services_option">Parts</span></li>
 			</ul>
 		</div>
 		<div class="grd_item_2">

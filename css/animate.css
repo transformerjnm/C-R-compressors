@@ -46,14 +46,12 @@ video {
 @keyframes fade_in_opacity {
 	0% {
 		opacity: .25;
-		-webkit-transform: rotateY(90deg);
 		transform: rotateY(90deg);
 		filter: blur(10px);
 	}
 
 	100% {
 		opacity: 1;
-		-webkit-transform: rotateY(0deg);
 		transform: rotateY(0deg);
 		filter: blur(0);
 	}
@@ -73,18 +71,13 @@ video {
 
 	from {
 		transform: translateX(500px);
-		-webkit-transform: translateX(500px);
-		-moz-transform: translateX(500px);
-		-ms-transform: translateX(500px);
-		-o-transform: translateX(500px);
+        opacity: 0.2;
+		
 	}
 
 	to {
 		transform: translateX(0px);
-		-webkit-transform: translateX(0px);
-		-moz-transform: translateX(0px);
-		-o-transform: translateX(0px);
-		-ms-transform: translateX(0px);
+        opacity: 1;
 	}
 
 }
@@ -100,19 +93,11 @@ video {
 
 	from {
 		transform: translateX(-500px);
-		-webkit-transform: translateX(-500px);
-		-moz-transform: translateX(-500px);
-		-o-transform: translateX(-500px);
-		-ms-transform: translateX(-500px);
 		opacity: 0.2;
 	}
 
 	to {
 		transform: translateX(0px);
-		-webkit-transform: translateX(0px);
-		-moz-transform: translateX(0px);
-		-o-transform: translateX(0px);
-		-ms-transform: translateX(0px);
 		opacity: 1;
 	}
 

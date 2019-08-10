@@ -304,14 +304,53 @@ if (nav_active = true) {
 	);
 }
 /*Services active option*/
+let maintnace_description = "maintance  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore obcaecati totam, qui, id molestias excepturi enim rem, eveniet tempora hic maiores laboriosam doloribus cupiditate earum voluptatum. Repellendus, ab dicta possimus.";
+
+let install_decritption = "install Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, eligendi itaque aliquid eveniet pariatur consequatur iusto illum ab, fugit delectus dolore nobis porro temporibus at ipsum enim quaerat nam cumque.";
+
+let rebuild_description = "rebuild  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque quaerat ad dolore nam assumenda nisi natus. Itaque doloribus ab corporis est illo tempore, dicta cum sint! Provident, expedita beatae voluptate!";
+
+let parts_description = "parts Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem amet, voluptas quo, excepturi necessitatibus id culpa, consequuntur cupiditate cum ipsum exercitationem mollitia earum consectetur quis, nam illum porro enim voluptatem.";
+
+let evaluation_description = "evaluation Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, dolore tempore incidunt consequatur maiores facilis voluptatem. Debitis quia, perferendis, dolorum aperiam vitae rem cumque molestias ullam id iure sapiente. Nihil.";
+
+let current_description = evaluation_description;
+
 let service_options = document.querySelectorAll('.services_option');
 let service_section = document.querySelector('.services');
-service_section.addEventListener('click', check_if_service_clicked);
-window.addEventListener('load', check_if_service_clicked);
+
+service_section.addEventListener('click', check_if_service_clicked); //on click check which element was clicked
+
+window.addEventListener('load', check_if_service_clicked); //on load, load clicked element
+
 /*each element check if its been clicked*/
 function check_if_service_clicked() {
+    
+        //for each services
 	service_options.forEach(function(service){
+        
+        
 		service.addEventListener('click', function () {
+            
+            let service_id = service.getAttribute('id'); //gets id of current element
+            let service_description = document.getElementById('service_description');
+            
+            switch(service_id){
+                    
+                case "services_evalution": current_description = evaluation_description;
+                    break;
+                case "services_maintance": current_description = maintnace_description;
+                    break;
+                case "services_installs": current_description = install_decritption;
+                    break;
+                case "services_rebuilds": current_description = rebuild_description;
+                    break;
+                case "services_parts": current_description = parts_description;
+                    break;
+                    
+            }
+             
+            
 			//if clicked remove class active from old active element
 			service_options.forEach(function (service_remove) {
 				if (service_remove.classList.contains('service_active')) {
@@ -319,7 +358,13 @@ function check_if_service_clicked() {
 				}
 			});
 			service.classList.add('service_active');
+            
+            
+                
+            
 		});
+        
+        service_description.innerHTML = current_description; //changes description to the current active service option
 	});
 }
 //resuable function to throttle the number of times a fuction is called
