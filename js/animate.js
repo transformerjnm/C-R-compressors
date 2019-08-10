@@ -356,8 +356,13 @@ function check_if_service_clicked() {
 				if (service_remove.classList.contains('service_active')) {
 					service_remove.classList.remove('service_active');
 				}
+                if(service_description.classList.contains('slide_in_right')){
+                    service_description.classList.remove('slide_in_right');
+                    void service_description.offsetWidth; //triggers reflow to make animation work
+                }
 			});
 			service.classList.add('service_active');
+            service_description.classList.add('slide_in_right');
             
             
                 
