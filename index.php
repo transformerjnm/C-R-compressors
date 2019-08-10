@@ -1,9 +1,9 @@
 <?php require("shared/header.php")?>
 <section class="hero_section" id="hero_id">
-<!-- smoke effect-->
-<video autoplay loop muted id="video">
-    <source src="images/smoke.mp4" type="video/MP4">
-</video>
+	<!-- smoke effect-->
+	<video autoplay loop muted id="video">
+		<source src="images/smoke.mp4" type="video/MP4">
+	</video>
 	<div class="hero_content">
 		<h1 id="title">C&amp;R first time customer get a free evaluation!</h1>
 		<span><a href="contact.php?service=eva" class="contact_button">Get Free Evaluation</a></span>
@@ -11,26 +11,19 @@
 </section>
 <!-- *****SERVICES***** -->
 <section class="wide_skinny services" id="services_id">
-	<div class="flexbox">
-		<div class="flex_item" id="services_animate">
-			<h4>Evaluation</h4>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio praesentium perferendis quae, natus officia sapiente maiores, quas sequi voluptatum ipsa, voluptatem corporis! Corporis asperiores iure, quas in officiis nemo culpa?</p>
+	<div class="grd_col_2">
+		<div class="grd_item_1">
+			<ul>
+				<li id="services_evalution"><span class="services_option service_active">Evalution</span></li>
+				<li id="services_maintance" ><span class="services_option">Preventive Maintance</span></li>
+				<li id="services_installs"><span class="services_option">Installs</span></li>
+				<li id="services_rebuilds"><span  class="services_option">Rebuilds</span></li>
+				<li id="services_parts"><span  class="services_option">Parts</span></li>
+			</ul>
 		</div>
-		<div class="flex_item">
-			<h4>Preventive Maintenance</h4>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea cupiditate molestias delectus, nulla labore ex dolores tempore veritatis. Beatae eos expedita sit fugiat fugit inventore illo sunt explicabo, aut iste.</p>
-		</div>
-		<div class="flex_item">
-			<h4>Installs</h4>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At quibusdam beatae quod rem, deleniti, porro ea, sapiente officiis ut, neque impedit dolores tempora. Qui magni deleniti dolor fugit, cupiditate culpa!</p>
-		</div>
-		<div class="flex_item">
-			<h4>Rebuilds</h4>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, incidunt molestiae ducimus, explicabo, delectus ratione ad dolor sit aliquid, assumenda sequi cupiditate reprehenderit minus voluptates veniam. Est voluptates maxime eveniet.</p>
-		</div>
-		<div class="flex_item">
-			<h4>Parts</h4>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci iste, quasi earum harum at, doloribus similique ipsam distinctio! Nisi eveniet dolorum tenetur quasi, obcaecati vero error harum molestias enim explicabo?</p>
+		<div class="grd_item_2">
+			<h3 id="service_name"></h3>
+			<p id="service_description"></p>
 		</div>
 	</div>
 </section>
@@ -51,7 +44,7 @@
 <section class="normal_content time" id="time_id">
 	<div class="grd_col_2">
 		<div class="grd_item_1" id="i_need_repair">
-		<h3>Is your sytem running right?</h3>
+			<h3>Is your sytem running right?</h3>
 			<span><a href="contact.php?service=repair" class="contact_button">I Need Repairs</a></span>
 		</div>
 		<div class="grd_item_2" id="emergancy">
@@ -73,4 +66,3 @@
 	</div>
 </section>
 <?php include("shared/footer.php")?>
-
