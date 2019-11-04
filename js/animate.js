@@ -1,4 +1,4 @@
-//on load 
+//on load
 window.addEventListener('load', function () {
 	/*page transition*/
 	let body = document.querySelector('body');
@@ -6,7 +6,7 @@ window.addEventListener('load', function () {
 	//---------title animation----------
 	if (document.getElementById("title")) {
 		var title = document.getElementById("title");
-		title.classList.add("fade_in2"); //title animation   
+		title.classList.add("fade_in2"); //title animation
 	}
 });
 
@@ -304,15 +304,15 @@ if (nav_active = true) {
 	);
 }
 /*Services active option*/
-let maintnace_description = "maintance  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore obcaecati totam, qui, id molestias excepturi enim rem, eveniet tempora hic maiores laboriosam doloribus cupiditate earum voluptatum. Repellendus, ab dicta possimus.";
+let maintnace_description = "Avoid costly catastrophic breakdowns with preventive maintenance. We will carefully maintain of each part to ensure that the reliability of your system is at its peak. Contact us to get the maximum reliability out of your system. ";
 
-let install_decritption = "install Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, eligendi itaque aliquid eveniet pariatur consequatur iusto illum ab, fugit delectus dolore nobis porro temporibus at ipsum enim quaerat nam cumque.";
+let install_decritption = "Get state of the art air compressor system installed professionally. By choosing us we ensure that your system is installed correctly to increase reliability, minimize wear, and run efficiently. Start out on the right foot today and contact us about your air compressor install!";
 
-let rebuild_description = "rebuild  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque quaerat ad dolore nam assumenda nisi natus. Itaque doloribus ab corporis est illo tempore, dicta cum sint! Provident, expedita beatae voluptate!";
+let rebuild_description = "Got an old air compressor system that needs refurbishing? We can bring life back to your old compressor with a comprehensive rebuild. Save money but not having to replace your entire system. Contact us to restore your system back to its original capability. ";
 
-let parts_description = "parts Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem amet, voluptas quo, excepturi necessitatibus id culpa, consequuntur cupiditate cum ipsum exercitationem mollitia earum consectetur quis, nam illum porro enim voluptatem.";
+let parts_description = "Need part to fix your own compressor? Look no farther, we can get you the parts you need! Talk to our professional to find the perfect part for your mission. Contact us today for pricing and availability.";
 
-let evaluation_description = "evaluation Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, dolore tempore incidunt consequatur maiores facilis voluptatem. Debitis quia, perferendis, dolorum aperiam vitae rem cumque molestias ullam id iure sapiente. Nihil.";
+let evaluation_description = "A detail analysis of all your system components. We will find current problems and look for signs of extensive wear on components. Then we will make an effective plan to fix your system and a plan for maintenance.";
 
 let current_description = evaluation_description;
 
@@ -325,18 +325,18 @@ window.addEventListener('load', check_if_service_clicked); //on load, load click
 
 /*each element check if its been clicked*/
 function check_if_service_clicked() {
-    
+
         //for each services
 	service_options.forEach(function(service){
-        
-        
+
+
 		service.addEventListener('click', function () {
-            
+
             let service_id = service.getAttribute('id'); //gets id of current element
             let service_description = document.getElementById('service_description');
-            
+
             switch(service_id){
-                    
+
                 case "services_evalution": current_description = evaluation_description;
                     break;
                 case "services_maintance": current_description = maintnace_description;
@@ -347,10 +347,10 @@ function check_if_service_clicked() {
                     break;
                 case "services_parts": current_description = parts_description;
                     break;
-                    
+
             }
-             
-            
+
+
 			//if clicked remove class active from old active element
 			service_options.forEach(function (service_remove) {
 				if (service_remove.classList.contains('service_active')) {
@@ -363,12 +363,12 @@ function check_if_service_clicked() {
 			});
 			service.classList.add('service_active');
             service_description.classList.add('slide_in_right');
-            
-            
-                
-            
+
+
+
+
 		});
-        
+
         service_description.innerHTML = current_description; //changes description to the current active service option
 	});
 }
