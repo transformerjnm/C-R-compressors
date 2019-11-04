@@ -2,29 +2,29 @@
 	<div class="contact_hero_section"></div>
 	<div class="blank_space wide_skinny"></div>
 	<div class="blank_space"></div>
-	<?php 
+	<?php
 	/*Set message based upon which button they clicked to get to this page*/
 	$service = "";
-	if(isset($_GET['service'])){ 
+	if(isset($_GET['service'])){
 	  $service = $_GET['service'];
 	}
 		switch($service){
 			case "eva":
 				$service_msg = "for a FREE Evaluation!";
 				break;
-				
+
 			case "area":
 				$service_msg = "to see if your in our service area.";
 				break;
-				
+
 			case "repair":
 				$service_msg = "for compressor repairs.";
 				break;
-				
+
 			case "question":
 				$service_msg = "for answers to all your questions!";
 				break;
-				
+
 			default:
 				$service_msg = "for all your compressor needs!";
 		}
@@ -36,7 +36,7 @@
 	    <div class="contact_align">
 	        <ul>
 	            <li><a href="mailto:asdasdasdasdasd">Email: adsasdasdasdasd</a><br><br></li>
-	           
+
 	            <li><a href="tel:1231231234">Phone: 123-123-1234</a></li>
 	        </ul>
 	    </div>
@@ -99,31 +99,31 @@
 	<?php
 	/*Subject of email based upon the services they chose*/
 	$subject="R&C Request For ";
-	if( isset( $_POST['submit'] ) ){	
+	if( isset( $_POST['submit'] ) ){
 		if( !empty( $_POST['check_list'] ) ){
 			foreach( $_POST['check_list'] as $service ){
-				$subject = $subject . ", " . htmlspecialchars($service);		
-			}	
+				$subject = $subject . ", " . htmlspecialchars($service);
+			}
 			unset( $_POST['submit'] );
 			unset( $_POST['check_list'] );
 			/*compose mail*/
             /*$to is mail server proviveded by mail hosting*/
-			$to = "test@jnmtest.x10host.com";
+			$to = "maindserver@00webhost.com";
   		    $msg = "Name: " . htmlspecialchars($_POST['Name']) . "\n\r".
 				"Email: " . htmlspecialchars($_POST['Email']) . "\n\r".
 				"Phone: " . htmlspecialchars($_POST['Phone']) . "\n\r".
 				"\n\r".
 				$_POST['msg'];
-            
+
             ini_set('SMTP','xo7.x10hosting.com');
-            ini_set('smtp_port',465);    
-            
+            ini_set('smtp_port',465);
+
 			mail( $to, $subject, $msg );
             echo "sent mail";
 		}else{
 			/*Service not selected*/
 			$error_service = "Please choose a service!";
-		}		
+		}
 	}
 	?>
 	<?php include("shared/footer.php")?>

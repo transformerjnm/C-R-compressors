@@ -31,7 +31,7 @@
 	<div class="grd_col_2">
 		<div class="grd_item_1">
 			<h3 id="header_3">Area</h3>
-			<p id="paragraph">We service Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum aliquid illo eveniet ducimus animi dicta ab, vitae voluptates autem accusamus quis, ipsa voluptatem consequuntur. Nostrum consequuntur sed deserunt libero tempore!</p>
+			<p id="paragraph">We gladly service most areas in Georgia.</p>
 		</div>
 		<div class="grd_item_2" id="contact_area">
 			<h3>See if your in our service area.</h3>
@@ -43,7 +43,7 @@
 <section class="normal_content time" id="time_id">
 	<div class="grd_col_2">
 		<div class="grd_item_1" id="i_need_repair">
-			<h3>Is your sytem running right?</h3>
+			<h3>Is your sytem not running right?</h3>
 			<span><a href="contact.php?service=repair" class="contact_button">I Need Repairs</a></span>
 		</div>
 		<div class="grd_item_2" id="emergancy">
@@ -56,7 +56,7 @@
 	<div class="grd_col_2">
 		<div class="grd_item_1">
 			<h3 id="who_header">Who We Are</h3>
-			<p id="who_p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni facilis optio recusandae eum, omnis iusto. Ratione est, praesentium aspernatur, voluptatem minus pariatur cumque quo facilis omnis libero doloribus tenetur, ea!</p>
+			<p id="who_p">We are a proud family owned business. Passed down through multiple generations our company has survived by treating its customers like family. Our service will always be done to the best of our ability and we strive to build relationships with our customers. </p>
 		</div>
 		<div class="grd_item_2" id="questions">
 			<h3>Have questions about us?</h3>
