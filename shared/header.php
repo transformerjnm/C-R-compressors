@@ -15,7 +15,7 @@
 	<!-- ADD DESCRIPTION SEO OPT JASON LD-->
 	<meta name="description" content="Free evaluation for first time customers and 24/7 Emergency Repair. C&R Compressors can handle all your air compressors needs in Georgia!" />
 	<link rel="icon" type="image/jpg" href="images/r&c_logo.jpg">
-	<title>R&amp;C Compressors</title>
+	<title>C&amp;R Compressors</title>
 </head>
 
 <body>
