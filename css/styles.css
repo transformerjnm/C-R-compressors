@@ -7,6 +7,7 @@ grey-white: rgba(240,240,240,1) #f0f0f0
 black
 */
 :root {
+
     --text_color: #f0f0f0;
     --accent_color: #003478;
     --accent_color_rgba: rgba(0, 52, 120, .75);
@@ -50,13 +51,13 @@ p {
 
 /*-----navigation*------*/
 nav {
-    height: 12vh;
+    height: 8vh;
     position: fixed;
+    text-align: center;
     color: var(--text_color);
     background-color: var(--accent_color_rgba);
     width: 100vw;
     z-index: 3;
-    clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 5vw), 0% 100%);
 }
 
 nav ul {
@@ -132,14 +133,6 @@ nav ul {
     min-height: 100vh;
 }
 
-.contact_hero_section {
-    padding: 0;
-    background-image: url("../mobile_images/old_phone_mobile.jpg");
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
-}
-
 .hero_content {
     text-align: center;
     margin: auto;
@@ -165,30 +158,17 @@ section {
     padding-right: 1rem;
 }
 
-.wide_skinny {
+.color_section {
     background-color: var(--accent_color);
     color: var(--text_color);
-    clip-path: polygon(0% 0%, 100% 5vw, 100% calc(100% - 5vw), 0% 100%);
-    shape-outside: polygon(0% 0%, 100% 5vw, 100% calc(100% - 5vw), 0% 100%);
-    padding: 5vw 1rem 5vw 1rem;
-    margin-top: -5vw;
-    margin-bottom: -5vw;
-}
-
-.skinny_wide {
-    background-color: var(--accent_color);
-    color: var(--text_color);
-    clip-path: polygon(0 5vw, 100% 0, 100% 100%, 0 calc(100% - 5vw));
-    shape-outside: polygon(0 5vw, 100% 0, 100% 100%, 0 calc(100% - 5vw));
-    padding: 5vw 1rem 5vw 1rem;
-    margin-top: -5vw;
-    margin-bottom: -5vw;
+    padding: 1rem;
+    min-height: 50vh;
 }
 
 .normal_content {
-    padding-top: 5vw;
-    padding-bottom: 5vw;
-    color: var(--text_color);
+    padding-top: 1rem;
+    color: black;
+    min-height: 50vh;
 }
 /*--------page sections specifics-------*/
 /*home page*/
@@ -210,74 +190,13 @@ section {
 .services p {
 	margin: 3rem;
 }
-.area {
-    min-height: 50vh;
-    background-size: cover;
-    background-position: center;
-    background-image: url(../mobile_images/city_mobile.jpg);
-    border-bottom: 1px solid var(--accent_color_rgba);
-}
 
-.time {
-    min-height: 50vh;
-    background-size: cover;
-    background-position: center;
-    background-image: url(../mobile_images/welding_repair_mobile.jpg);
-}
-.about {
-    min-height: 50vh;
-}
 .contact_button {
     color: var(--text_color);
     background-color: var(--alert_color);
     border-radius: 5px 15px 5px 15px;
     box-shadow: 3px 3px 10px black;
 }
-
-/*contact page*/
-.blank_space {
-    height: 425px;
-}
-
-.contact_call {
-    color: var(--text_color);
-    background-color: var(--accent_color);
-    position: absolute;
-    min-height: 10rem;
-    top: 10rem;
-    left: 10vw;
-    width: 80vw;
-    border-radius: 5px 15px 5px 15px;
-    box-shadow: 0 0 10px black;
-    text-align: center;
-}
-
-.contact_form {
-    color: var(--text_color);
-    background-color: var(--accent_color);
-    position: absolute;
-    top: 25rem;
-    left: 10vw;
-    width: 80vw;
-    border-radius: 5px 15px 5px 15px;
-    box-shadow: 0 0 10px black;
-    text-align: center;
-}
-
-textarea {
-    width: 100%;
-}
-
-.contact_align {
-    width: 50%;
-    margin: auto;
-    text-align: left;
-}
-
-.contact_align ul {
-    list-style-type: none;
-}
-
 /*-----footer-----*/
 footer {
     padding: 5vw 1rem 0 1rem;
@@ -379,17 +298,6 @@ footer i {
         background-image: url(../images/factory.jpg);
     }
 
-    .area {
-        background-image: url(../images/city.jpg);
-    }
-
-    .time {
-        background-image: url(../images/welding_repair.jpg);
-    }
-
-    .contact_hero_section {
-        background-image: url(../images/old_phone.jpg);
-    }
 
     html {
         font-size: 20px;
@@ -408,25 +316,23 @@ footer i {
     }
 
     nav ul {
-        margin: 0;
+        margin: auto;
         padding: 0;
-        padding-left: 1rem;
         width: 80vw;
-        display: inline;
+        height: 8vh;
+        display: block;
     }
 
     nav li {
-        display: inline;
+        display: inline-block;
         height: 3rem;
         padding: .5rem;
-    }
-
-    nav .logo {
-        width: 3rem;
         position: relative;
-        top: 20%;
+        top: 50%;
+        transform: translateY(-50%);
     }
 
+    /*hamburger for opening mobile nav*/
     .mobile_nav_logo {
         display: none;
     }

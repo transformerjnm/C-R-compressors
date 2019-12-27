@@ -14,7 +14,7 @@
 	<link rel="stylesheet preload" href="css/animate.css">
 	<!-- ADD DESCRIPTION SEO OPT JASON LD-->
 	<meta name="description" content="Free evaluation for first time customers and 24/7 Emergency Repair. C&R Compressors can handle all your air compressors needs in Georgia!" />
-	<link rel="icon" type="image/jpg" href="images/r&c_logo.jpg">
+	<link rel="icon" type="image/jpg" href="images/r&c_logo.png">
 	<title>C&amp;R Compressors</title>
 </head>
 
@@ -22,12 +22,10 @@
 	<header>
 		<nav>
 			<ul>
-				<li><a href="index.php#hero_id"><img src="images/r&c_logo.jpg" alt="C&R Compressors logo" class="logo"></a></li>
 				<li><a href="index.php#services_id">Services</a></li>
 				<li><a href="index.php#area_id">Area</a></li>
 				<li><a href="index.php#time_id">Time</a></li>
 				<li><a href="index.php#about_id">About</a></li>
-				<li><a href="contact.php">Contact</a></li>
 			</ul>
             <div class="mobile_nav_logo">
 				<div class="line"></div>
@@ -37,13 +35,10 @@
 		</nav>
 		<div class="mobile_nav">
 			<ul>
-				<li><a href="index.php#hero_id"><img src="images/r&c_logo.jpg" alt="C&R compressors logo" class="logo"></a></li>
 				<li><a href="index.php#services_id" >Services</a></li>
 				<li><a href="index.php#area_id" >Area</a></li>
 				<li><a href="index.php#time_id" >Time</a></li>
 				<li><a href="index.php#about_id">About</a></li>
-				<li><a href="contact.php" >Contact</a></li>
-
 			</ul>
 		</div>
 	</header>
