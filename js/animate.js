@@ -1,8 +1,5 @@
 //on load
 window.addEventListener('load', function () {
-	/*page transition*/
-	let body = document.querySelector('body');
-	body.classList.add('page_transition');
 	//---------title animation----------
 	if (document.getElementById("title")) {
 		var title = document.getElementById("title");
