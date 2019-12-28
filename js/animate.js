@@ -1,11 +1,3 @@
-//on load
-window.addEventListener('load', function () {
-	//---------title animation----------
-	if (document.getElementById("title")) {
-		var title = document.getElementById("title");
-		title.classList.add("fade_in2"); //title animation
-	}
-});
 
 // ------ add playback time to smoke video ------
 if (document.getElementById("video")) {
@@ -20,6 +12,7 @@ window.addEventListener('scroll', throttle(anmiations, 100));
 function anmiations() {
 	animate_contact_services_area_h3();
 	animate_contact_services_area_p();
+	animate_contact_services_area_p2();
 	animate_contact_services_area_contact();
 	animate_repair();
 	animate_who_we_are_h3();
@@ -139,7 +132,7 @@ function animate_contact_services_area_h3() {
 		let area_title = document.getElementById("header_3"); //selects the h3 tag
 		let area_position = area_title.getBoundingClientRect().top; //gets the top position of h3
 
-		check_element_position(area_title, area_position, "slide_in_right");
+		check_element_position(area_title, area_position, "slide_in_left");
 
 
 	}
@@ -161,6 +154,22 @@ function animate_contact_services_area_p() {
 	}
 
 }
+
+function animate_contact_services_area_p2() {
+
+
+	if (document.getElementById("paragraph2")) {
+
+		let area_paragraph = document.getElementById("paragraph2"); //selects the paragrpah
+		let area_paragraph_position = area_paragraph.getBoundingClientRect().top; //gets top position
+
+
+		check_element_position(area_paragraph, area_paragraph_position, "slide_in_left");
+
+	}
+
+}
+
 
 //services area title and button
 function animate_contact_services_area_contact() {
