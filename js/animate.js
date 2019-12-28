@@ -13,7 +13,6 @@ function anmiations() {
 	animate_contact_services_area_h3();
 	animate_contact_services_area_p();
 	animate_contact_services_area_p2();
-	animate_contact_services_area_contact();
 	animate_repair();
 	animate_who_we_are_h3();
 	animate_who_we_are_p();
@@ -171,22 +170,7 @@ function animate_contact_services_area_p2() {
 }
 
 
-//services area title and button
-function animate_contact_services_area_contact() {
 
-	if (document.getElementById("contact_area")) {
-
-
-		let contact_area_div = document.getElementById("contact_area"); //selects the area
-		let contact_area_position = contact_area_div.getBoundingClientRect().top; //top position
-
-
-		check_element_position(contact_area_div, contact_area_position, "fade_in");
-
-
-	}
-
-}
 
 //i need repair and 24/7 repair
 function animate_repair() {

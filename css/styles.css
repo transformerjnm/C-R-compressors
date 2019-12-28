@@ -58,8 +58,9 @@ nav {
     text-align: center;
     color: var(--text_color);
     background-color: var(--accent_color_rgba);
-    width: 100vw;
+    width: 100%;
     z-index: 3;
+    border-radius: 0 0 10px 10px;
 }
 
 nav ul {
@@ -133,6 +134,7 @@ nav ul {
     background-position: center;
     color: var(--text_color);
     min-height: 100vh;
+    border-radius: 0 0 10px 10px;
 }
 
 .hero_content {
@@ -144,22 +146,25 @@ nav ul {
     line-height: 100%;
 }
 
-.hero_content a {
-    position: relative;
-    top: 5vh;
-}
+
 
 .hero_content h1 {
     padding: 0;
     margin: 0;
 }
-
+ .hero_content img {
+     max-width: 100%;
+     max-height: 150px;
+     margin-bottom: 2rem;
+ }
 .hero_section span{
     display: block;
-    position: relative;
-    top: 15vh;
+    font-weight: bold;
+    margin: 1rem;
 }
-
+.hero_button{
+    margin-bottom: 2rem !important;
+}
 /*-----sections styles-----*/
 section {
     padding-left: 1rem;
@@ -167,8 +172,6 @@ section {
 }
 
 .color_section {
-    background-color: var(--accent_color);
-    color: var(--text_color);
     padding: 1rem;
     min-height: 50vh;
 }
@@ -192,17 +195,29 @@ section {
 	cursor: pointer;
 	padding: 1rem;
     font-weight: bold;
-    display: inline;
+    margin: 1rem;
+}
+.services li span{
+    border-bottom: 2px solid var(--accent_color);
 }
 
 .service_active{
-	border-bottom: 3px solid var(--alert_color);
+	border-bottom: 3px solid var(--alert_color) !important;
 }
 .services p {
 	margin: 3rem;
 }
 #contact_area {
     text-align: center;
+    background-color: var(--accent_color);
+    border-radius: 10px 0 0 10px;
+    color: var(--text_color);
+}
+.area {
+    padding-right: 0;
+}
+.area .grd_item_2{
+    margin-top: 6rem;
 }
 .contact_button {
     color: var(--text_color);
@@ -210,6 +225,7 @@ section {
     border-radius: 5px 15px 5px 15px;
     box-shadow: 3px 3px 10px black;
     position: relative;
+
 }
 
 
@@ -221,13 +237,16 @@ footer {
     padding: 5vw 1rem 0 1rem;
 	/*fixes animatios on mobile. due to meta tage device wisth = initail width mobile phone ignore oflow-x hidden on html and body tag*/
 		overflow-x: hidden;
-    color: black;
+    color: var(--text_color);
+    background-color: var(--accent_color);
     position: absolute;
     width: 100%;
+    text-align: center;
 }
 
 footer ul {
     list-style-type: none;
+    text-align: left;
 }
 
 footer li {
@@ -238,9 +257,11 @@ footer li {
 }
 
 footer a {
-    color: black;
+    color: var(--text_color);
 }
-
+footer img {
+    max-height: 100px;
+}
 footer span {
     font-size: .75rem;
     color: grey;
@@ -254,7 +275,7 @@ footer span a {
 }
 
 footer i {
-    color: blue;
+    color: var(--text_color);
     font-size: 3rem;
 }
 #footer_btn{
@@ -262,9 +283,6 @@ footer i {
 }
 /*height for y axis spacing adjustment*/
 @media only screen and (min-height: 300px) {
-    /* .hero_content a {
-        top: 45vh;
-    } */
 
     .hero_content h1 {
         font-size: 1.75rem;
@@ -351,7 +369,7 @@ footer i {
             .grd_col_2 {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
-                padding: 1rem;
+                padding: 1rem 0 1rem 1rem;
             }
         
             .grd_item_1 {
@@ -368,5 +386,12 @@ footer i {
             grd_item_3 {
                 grid-column-start: 1;
                 grid-column-end: 2;
+            }
+            .services li{
+                display: inline;
+                margin: 0;
+            }
+            .area .grd_item_2{
+                margin: 0;
             }
 }

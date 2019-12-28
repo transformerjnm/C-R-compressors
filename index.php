@@ -6,7 +6,7 @@
 	</video>
 	<div class="hero_content">
 		
-		<div class="grd_col_2">
+		<!-- <div class="grd_col_2">
 			<div class="grd_item_1">
 				<img class="fade_in2" src="images/r&c_logo.png" alt="C&R Compressors logo" class="logo">
 			</div>
@@ -14,13 +14,17 @@
 				<span class="email fade_in2">lakfjdlkdfjlkdsf@yahoo.com</span>
 				<span class="phone fade_in2">770-054-9786</span>
 			</div>
-		</div>
-		
+		</div> -->
+		<img class="fade_in2" src="images/r&c_logo.png" alt="C&R Compressors logo" class="logo">
 		<h1 id="title" class="fade_in2">C&amp;R first time customers get a free evaluation!</h1>
-		<span>
+		<span class="hero_button">
 			<a  class="hide_mobile contact_button fade_in2" href="mailto:email" >Get A Free Evaluation</a>
 			<a class="hide_desktop contact_button fade_in2" href="tel:phone" >Get A Free Evaluation</a>
-		</span>
+		</span> 
+		<div class="<div class="grd_item_2">
+				<span class="email fade_in2">lakfjdlkdfjlkdsf@yahoo.com</span>
+				<span class="phone fade_in2">770-054-9786</span>
+			</div>
 	</div>
 </section>
 <!-- *****SERVICES***** -->
@@ -39,8 +43,7 @@
 	<div class="grd_col_2">
 		<div class="grd_item_1">
 			<h3 id="header_3">Service Areas</h3>
-			<p id="paragraph">We gladly service most areas in Georgia.</p>
-			<h3 id="paragraph2">See if you're in our service area.</h3>
+			<p id="paragraph">We gladly service most areas in Georgia. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem, facilis velit odio eum ex odit doloremque. Numquam quaerat quae fugiat quam sint perferendis odio! Quidem vel cupiditate impedit labore hic!</p>
 		</div>
 		<div class="grd_item_2" id="contact_area">
 		<h3>24/7 Emergency Repairs</h3>
