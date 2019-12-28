@@ -5,7 +5,17 @@
 		<source src="images/smoke.mp4" type="video/MP4">
 	</video>
 	<div class="hero_content">
-		<img src="images/r&c_logo.png" alt="C&R Compressors logo" class="logo">
+		
+		<div class="grd_col_2">
+			<div class="grd_item_1">
+				<img src="images/r&c_logo.png" alt="C&R Compressors logo" class="logo">
+			</div>
+			<div class="<div class="grd_item_2">
+				<span class="email">lakfjdlkdfjlkdsf@yahoo.com</span>
+				<span class="phone">770-054-9786</span>
+			</div>
+		</div>
+		
 		<h1 id="title">C&amp;R first time customers get a free evaluation!</h1>
 		<span><a href="contact.php?service=eva" class="contact_button">Get A Free Evaluation</a></span>
 	</div>

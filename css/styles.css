@@ -144,12 +144,18 @@ nav ul {
 
 .hero_content a {
     position: relative;
-    top: 25vh;
+    top: 5vh;
 }
 
 .hero_content h1 {
     padding: 0;
     margin: 0;
+}
+
+.hero_section span{
+    display: block;
+    position: relative;
+    top: 15vh;
 }
 
 /*-----sections styles-----*/
@@ -241,9 +247,9 @@ footer i {
 
 /*height for y axis spacing adjustment*/
 @media only screen and (min-height: 300px) {
-    .hero_content a {
+    /* .hero_content a {
         top: 45vh;
-    }
+    } */
 
     .hero_content h1 {
         font-size: 1.75rem;
@@ -307,9 +313,9 @@ footer i {
         line-height: 225%;
     }
 
-    .hero_content a {
+    /* .hero_content a {
         top: 50vh;
-    }
+    } */
 
     .hero_content h1 {
         font-size: 2rem;
