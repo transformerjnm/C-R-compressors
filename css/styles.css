@@ -219,6 +219,9 @@ section {
 .area .grd_item_2{
     margin-top: 6rem;
 }
+.area p {
+    margin: 3rem;
+}
 .contact_button {
     color: var(--text_color);
     background-color: var(--alert_color);

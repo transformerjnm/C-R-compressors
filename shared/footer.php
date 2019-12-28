@@ -4,10 +4,9 @@
 			<div class="grd_item_1">
 				<h3 id="header_three">Sitemap</h3>
 				<ul id="footer_ul">
-					<li id="odd"><a href="index.php#services_id">Services</a></li>
-					<li id="even"><a href="index.php#area_id">Area</a></li>
-					<li id="odd2"><a href="index.php#time_id">Time</a></li>
-					<li id="even2"><a href="index.php#about_id">About</a></li>
+					<li><a href="index.php#services_id">Services</a></li>
+					<li><a href="index.php#area_id">Availability</a></li>
+					<li><a href="index.php#about_id">About Us</a></li>
 				</ul>
 			</div>
 			<div class="grd_item_2">
