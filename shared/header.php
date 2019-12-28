@@ -23,9 +23,8 @@
 		<nav>
 			<ul>
 				<li><a href="index.php#services_id">Services</a></li>
-				<li><a href="index.php#area_id">Area</a></li>
-				<li><a href="index.php#time_id">Time</a></li>
-				<li><a href="index.php#about_id">About</a></li>
+				<li><a href="index.php#area_id">Availability</a></li>
+				<li><a href="index.php#about_id">About Us</a></li>
 			</ul>
             <div class="mobile_nav_logo">
 				<div class="line"></div>
@@ -36,9 +35,8 @@
 		<div class="mobile_nav">
 			<ul>
 				<li><a href="index.php#services_id" >Services</a></li>
-				<li><a href="index.php#area_id" >Area</a></li>
-				<li><a href="index.php#time_id" >Time</a></li>
-				<li><a href="index.php#about_id">About</a></li>
+				<li><a href="index.php#area_id" >Availability</a></li>
+				<li><a href="index.php#about_id">About Us</a></li>
 			</ul>
 		</div>
 	</header>

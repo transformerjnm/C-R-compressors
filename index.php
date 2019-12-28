@@ -30,8 +30,8 @@
 <!-- *****SERVICES***** -->
 <section class="color_section services" id="services_id">
 			<ul>
-				<li><span id="services_evalution" class="services_option service_active">Evalution</span></li>
-				<li><span id="services_maintance" class="services_option">Preventive Maintance</span></li>
+				<li><span id="services_evalution" class="services_option service_active">Evaluation</span></li>
+				<li><span id="services_maintance" class="services_option">Preventive Maintenance</span></li>
 				<li><span id="services_installs" class="services_option">Installs</span></li>
 				<li><span id="services_rebuilds"  class="services_option">Rebuilds</span></li>
 				<li><span id="services_parts"  class="services_option">Parts</span></li>
