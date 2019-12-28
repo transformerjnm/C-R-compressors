@@ -24,7 +24,7 @@ video {
 	width: 100%;
 	height: 100%;
 	position: absolute;
-	/* this fixed the button problem */
+	border-radius: 0 0 10px 10px;
 }
 
 @keyframes fade_in_opacity {
