@@ -8,22 +8,23 @@
 		
 		<div class="grd_col_2">
 			<div class="grd_item_1">
-				<img src="images/r&c_logo.png" alt="C&R Compressors logo" class="logo">
+				<img class="fade_in2" src="images/r&c_logo.png" alt="C&R Compressors logo" class="logo">
 			</div>
 			<div class="<div class="grd_item_2">
-				<span class="email">lakfjdlkdfjlkdsf@yahoo.com</span>
-				<span class="phone">770-054-9786</span>
+				<span class="email fade_in2">lakfjdlkdfjlkdsf@yahoo.com</span>
+				<span class="phone fade_in2">770-054-9786</span>
 			</div>
 		</div>
 		
-		<h1 id="title">C&amp;R first time customers get a free evaluation!</h1>
-		<span><a href="contact.php?service=eva" class="contact_button">Get A Free Evaluation</a></span>
+		<h1 id="title" class="fade_in2">C&amp;R first time customers get a free evaluation!</h1>
+		<span>
+			<a  class="hide_mobile contact_button fade_in2" href="mailto:email" >Get A Free Evaluation</a>
+			<a class="hide_desktop contact_button fade_in2" href="tel:phone" >Get A Free Evaluation</a>
+		</span>
 	</div>
 </section>
 <!-- *****SERVICES***** -->
 <section class="color_section services" id="services_id">
-	<div class="grd_col_2">
-		<div class="grd_item_1">
 			<ul>
 				<li><span id="services_evalution" class="services_option service_active">Evalution</span></li>
 				<li><span id="services_maintance" class="services_option">Preventive Maintance</span></li>
@@ -31,11 +32,7 @@
 				<li><span id="services_rebuilds"  class="services_option">Rebuilds</span></li>
 				<li><span id="services_parts"  class="services_option">Parts</span></li>
 			</ul>
-		</div>
-		<div class="grd_item_2">
 			<p id="service_description"></p>
-		</div>
-	</div>
 </section>
 <!-- *****SERVICE AREA and Service Time***** -->
 <section class="normal_content area" id="area_id">
@@ -43,13 +40,15 @@
 		<div class="grd_item_1">
 			<h3 id="header_3">Service Areas</h3>
 			<p id="paragraph">We gladly service most areas in Georgia.</p>
-			<h3>See if you're in our service area.</h3>
-			<span><a href="contact.php?service=area" class="contact_button">Service area</a></span>
+			<h3 id="paragraph2">See if you're in our service area.</h3>
 		</div>
 		<div class="grd_item_2" id="contact_area">
 		<h3>24/7 Emergency Repairs</h3>
 		<h3>Is your system not running right?</h3>
-			<span><a href="contact.php?service=repair" class="contact_button">I Need Repairs</a></span>
+			<span>
+				<a  class="hide_mobile contact_button fade_in2" href="mailto:email" >I Need Repairs</a>
+				<a class="hide_desktop contact_button fade_in2" href="tel:phone" >I Need Repairs</a>
+			</span>
 		</div>
 	</div>
 </section>
